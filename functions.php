@@ -91,6 +91,7 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
             'options' => array(
                 'show_on_front' => 'page',
                 'page_on_front' => '{{home}}',
+                'page_for_posts' => '{{home}}'
             )
         ));
         /**
@@ -103,6 +104,7 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
             return preg_replace('/(width|height)="\d+"\s/', "", $html);
         }
         add_filter( 'post_thumbnail_html', 'remove_img_attr' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'mc_theme_setup' );
@@ -190,3 +192,10 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+add_action( 'admin_init', function() {
+    add_editor_style(get_template_directory_uri() . '/static/css/elementary.css');
+}
+);

@@ -25,6 +25,28 @@
     z-index: 100000;
     /* Above WP toolbar. */ }
 
+blockquote {
+  quotes: "“" "”" "‘" "’"; }
+
+blockquote:before {
+  color: #ddd;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0;
+  vertical-align: -0.3em;
+  margin-left: -0.5em; }
+
+blockquote p {
+  display: inline;
+  font-style: italic;
+  margin-top: 0; }
+
+blockquote footer {
+  color: #666666; }
+
+img {
+  max-width: 100%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -287,23 +309,6 @@ a.article {
 
 .article__content {
   padding: 0; }
-  .article__content blockquote {
-    quotes: "“" "”" "‘" "’"; }
-  .article__content blockquote:before {
-    color: #ddd;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0;
-    vertical-align: -0.3em;
-    margin-left: -0.5em; }
-  .article__content blockquote p {
-    display: inline;
-    font-style: italic;
-    margin-top: 0; }
-  .article__content blockquote footer {
-    color: #666666; }
-  .article__content img {
-    max-width: 100%; }
 
 .article__metrics {
   bottom: 0; }
