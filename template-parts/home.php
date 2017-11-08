@@ -8,7 +8,7 @@
             ?></div><?php
         };
         ?>
-        <div class="post-index__content">
+        <div <?php post_class("post-index__content");?>>
             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                 <?php the_title('<div class="post-index__title">', '</div>'); ?>
             </a>
