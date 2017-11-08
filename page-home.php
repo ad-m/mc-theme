@@ -3,7 +3,7 @@
  *
  * Template Name: Home page
  *
- * @package mc-blog
+ * @package mc_theme
  */
 
 get_header();

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mc-blog
+ * @package mc_theme
  */
 
 get_header(); ?>

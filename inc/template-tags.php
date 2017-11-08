@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package mc-blog
+ * @package mc_theme
  */
 
 if ( ! function_exists( 'mc_theme_posted_on' ) ) :

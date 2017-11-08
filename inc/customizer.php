@@ -1,8 +1,8 @@
 <?php
 /**
- * mc-blog Theme Customizer
+ * mc_theme Theme Customizer
  *
- * @package mc-blog
+ * @package mc_theme
  */
 
 /**

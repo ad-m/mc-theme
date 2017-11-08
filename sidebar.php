@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package mc-blog
+ * @package mc_theme
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

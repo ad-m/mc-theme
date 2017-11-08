@@ -1,10 +1,10 @@
 <?php
 /**
- * mc-blog functions and definitions
+ * mc_theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package mc-blog
+ * @package mc_theme
  */
 
 if ( ! function_exists( 'mc_theme_setup' ) ) :
@@ -19,7 +19,7 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on mc-blog, use a find and replace
+		 * If you're building a theme based on mc_theme, use a find and replace
 		 * to change 'mc_theme' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'mc_theme', get_template_directory() . '/languages' );
