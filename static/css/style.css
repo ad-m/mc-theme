@@ -215,6 +215,7 @@ a.element {
   float: right; }
   .logo-bar__logo img {
     max-height: 120px;
+    max-width: none;
     height: 10vw; }
 
 .logo-bar__header {
