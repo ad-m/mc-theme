@@ -19,3 +19,12 @@ Konfiguracja
 ---
 
 Domyślnie powinna zostać załatowana statyczna strona główna. W razie problemów zobacz wywołanie ``starter-content`` w ``wp-content/themes/mc_theme/index.php``.
+
+Budowanie
+---
+
+W katalogu z wtyczką wykonaj:
+```
+npm install
+gulp css
+```
