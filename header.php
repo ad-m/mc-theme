@@ -54,10 +54,7 @@
 </div>
 <div class="container navbar row">
     <div class="navbar__search">
-        <form class="search-form">
-            <input class="search-form__input" type="search" name="s">
-            <button class="search-form__button" type="submit">Szukaj</button>
-        </form>
+        <?php get_search_form(); ?>
     </div>
     <?php
         wp_nav_menu( array(
