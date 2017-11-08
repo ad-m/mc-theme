@@ -9,7 +9,7 @@
 
 ?>
 <div class="container">
-    <article id="post-<?php the_ID(); ?>" <?php post_class("row"); ?>>
+    <article id="post-<?php the_ID(); ?>" <?php post_class("row section"); ?>>
         <?php
         if (is_singular() && has_post_thumbnail()) :
             the_post_thumbnail('large', ['class' => 'article__cover']);

@@ -80,6 +80,19 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
 //			'flex-width'  => true,
 //			'flex-height' => true,
 //		) );
+        add_theme_support( 'starter-content', array(
+            'posts' => array(
+                'home' => array(
+                    // Use a page template with the predefined about page
+                    'template' => 'page-home.php',
+                    'show_on_front' => 'page',
+                ),
+            ),
+            'options' => array(
+                'show_on_front' => 'page',
+                'page_on_front' => '{{home}}',
+            )
+        ));
         /**
          * Disable attributes from thumbnail to manage them in CSS
          *
@@ -111,16 +124,27 @@ add_action( 'after_setup_theme', 'mc_theme_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+
 function mc_theme_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'mc_theme' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Home left', 'mc_theme' ),
+        'id'            => 'home-left',
+        'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<div class="header"><h2 class="widget-title">',
+        'after_title'   => '</h2><span class="header__strip"></span></div>',
+    ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Home right', 'mc_theme' ),
+        'id'            => 'home-right',
+        'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<div class="header"><h2 class="widget-title">',
+        'after_title'   => '</h2></div>',
+    ) );
+
 }
 add_action( 'widgets_init', 'mc_theme_widgets_init' );
 
@@ -166,4 +190,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

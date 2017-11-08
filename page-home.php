@@ -14,7 +14,7 @@ get_header();
         <div class="header">
             <h1 class="header__title">Wpisy</h1>
             <span class="header__strip"></span>
-            <div class="header__subtitle">Dostępne jest <a href="<?php echo get_post_type_archive_link('post'); ?>">archiwum wpisów</a>.</div>
+            <div class="header__subtitle">Dostępne jest <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">archiwum wpisów</a>.</div>
         </div>
         <div class="row">
 

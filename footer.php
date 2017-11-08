@@ -14,19 +14,28 @@
 <div class="container">
     <div class="section row">
         <div class="col-6">
-            <div class="header">
-                <h1 class="header__title">O blogu</h1>
-                <span class="header__strip"></span>
-            </div>
-            <p>To jest miejsce do mniej formalnej komunikacji, wymiany doświadczeń oraz udostępnienia tych rzeczy, które
-                dla Państwa mogą być istotne i ciekawe.</p>
+            <?php if (is_active_sidebar('home-left')) : ?>
+                <?php dynamic_sidebar('home-left'); ?>
+            <?php else: ?>
+                <div class="header">
+                    <h1 class="header__title">O blogu</h1>
+                    <span class="header__strip"></span>
+                </div>
+                <p>To jest miejsce do mniej formalnej komunikacji, wymiany doświadczeń oraz udostępnienia tych rzeczy,
+                    które dla Państwa mogą być istotne i ciekawe.</p>
+            <?php endif; ?>
+
         </div>
         <div class="col-6">
-            <div class="header">
-                <h1 class="header__title">Znajdź nas</h1>
-            </div>
-            <p>Adres<br> Królewska 27<br> 00-500 Warszawa<br></p>
-            <p>Godziny<br>Poniedziałek—piątek: 8:15–16:15</p>
+            <?php if (is_active_sidebar('home-right')) : ?>
+                <?php dynamic_sidebar('home-right'); ?>
+            <?php else: ?>
+                <div class="header">
+                    <h1 class="header__title">Znajdź nas</h1>
+                </div>
+                <p>Adres<br> Królewska 27<br> 00-500 Warszawa<br></p>
+                <p>Godziny<br>Poniedziałek—piątek: 8:15–16:15</p>
+            <?php endif; ?>
         </div>
     </div>
 
