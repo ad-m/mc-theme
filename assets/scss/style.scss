@@ -4,16 +4,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-a {
-  color: #0075e2;
-}
-p {
-  color: #737373;
-}
 %clearfix {
   &:after {
     content: "";
@@ -22,6 +12,18 @@ p {
   }
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #737373;
+}
+a {
+  color: #0075e2;
+}
+h1, h2, h3, h4, h5,h6{
+  color: #000;
+}
+
+// Grid system
 .row {
   @extend %clearfix;
   margin: 0 -8px;
@@ -82,14 +84,12 @@ a.element {
   padding: 10px;
   flex-grow: 1;
   align-self: center;
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
 }
 
 .element__description {
   color: #737373;
 }
+
 .element__icon > img {
   display: block;
 }
@@ -212,7 +212,7 @@ a.element {
 .search-form__button {
   width: 90px;
   background-color: white;
-  margin-left: 10px;
+  margin-left: 5px;
   transition: 0.2s background-color;
   &:hover,
   &:focus {
@@ -235,4 +235,158 @@ a.element {
 .authorship {
   text-align: center;
 
+}
+
+// single article - single post on single /  archive pages
+a.article {
+  text-decoration: none;
+}
+.article__excerpt {
+  font-weight: bolder;
+
+}
+
+.article__cover {
+  width: 100%;
+}
+
+.article__meta {
+  padding: 10px;
+}
+
+.article__content {
+  padding: 0;
+
+  blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #ddd;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0;
+    //margin-right: -0.3em;
+    vertical-align: -0.3em;
+    margin-left: -0.5em;
+  }
+  blockquote p {
+    display: inline;
+    font-style: italic;
+    margin-top: 0;
+  }
+  blockquote footer {
+    color: darken(#737373, 5%);
+  }
+  img {
+    max-width: 100%;
+  }
+}
+.article__metrics {
+  //position: absolute;
+  bottom: 0;
+}
+
+// post-index - section on home page with cover which list posts
+.post-index {
+  display: flex;
+  padding: 10px 0;
+}
+a.post-index {
+  text-decoration: none;
+}
+.post-index__excerpt {
+  font-weight: bolder;
+
+}
+
+.post-index__cover {
+  width: 100%;
+}
+
+.post-index__meta {
+  padding: 10px 0px;
+}
+
+.post-index__content {
+  padding: 0 10px;
+
+}
+.post-index__metrics {
+  //position: absolute;
+  bottom: 0;
+}
+
+// comment-form - form below single post to add comment
+.comment-form {
+  & label {
+    padding: 10px 0;
+    display: block;
+  }
+  input {
+    line-height: 27px;
+  }
+  input,
+  textarea {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+  }
+  input:focus,
+  textarea:focus {
+    color: #000;
+  }
+  input[type=submit]{
+    &:hover,
+    &:focus {
+      background-color: gray;
+    }
+  }
+  textarea {
+    width: 100%;
+  }
+  .required {
+    color: #ff0000;
+  }
+}
+
+// comment-form - nested list of comment below single post
+$light_comment: 10px;
+.comment-list {
+  // TODO: Too little light in section? Increase paddings?
+  list-style: none;
+  padding-left: 0;
+
+  .comment-body{
+    color: #737373;
+    padding-left: 40px + $light_comment + $light_comment;
+    padding-top: $light_comment;
+    border-bottom-width: 1px;
+    border-bottom-color: green;
+  }
+  .comment.even {
+    background-color: #f0f0f0;
+  }
+  .comment.odd {
+    background-color: #fff;
+  }
+  .comment-meta {
+    position: relative;
+    .comment-author img {
+      position: absolute;
+      left: -40px - $light_comment;
+      top: 0;
+    }
+    .says {
+      display: none;
+    }
+    .edit-link{
+      display: none;
+    }
+  }
+  .children {
+    padding-top: 25px;
+    margin-top: 5px;
+    list-style:none;
+  }
 }

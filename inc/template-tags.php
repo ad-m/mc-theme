@@ -41,6 +41,65 @@ if ( ! function_exists( 'mc_theme_posted_on' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'mc_theme_metric' ) ) :
+    /**
+     * Prints HTML with meta information for the current post-date/time and author.
+     */
+    function get_posted_on_string()
+    {
+        if (get_the_time('U') == get_the_modified_time('U')) {
+            $time_published_string = '<time class="article__date published" datetime="%1$s">%2$s</time>';
+        } else {
+            $time_published_string = '<time class="article__date published updated" datetime="%1$s">%2$s</time>';
+        }
+
+        $time_published_string = sprintf($time_published_string,
+            esc_attr(get_the_date('c')),
+            esc_html(get_the_date())
+        );
+
+        return sprintf(
+        /* translators: %s: post publish date. */
+            esc_html_x('Posted on %s', 'post date', 'mc_theme'),
+            '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_published_string . '</a>'
+        );
+    }
+    function get_updated_on_string(){
+        if ( get_the_time( 'U' ) == get_the_modified_time( 'U' ) ) {
+            return '';
+        };
+        $time_updated_string = '<time class="article__date updated" datetime="%1$s">%2$s</time>';
+        $time_updated_string = sprintf( $time_updated_string,
+            esc_attr( get_the_modified_date( 'c' ) ),
+            esc_html( get_the_modified_date() )
+        );
+        return sprintf(
+        /* translators: %s: post update date. */
+            esc_html_x('Updated on %s', 'post date', 'mc_theme'),
+            '<a href="' . esc_url(get_permalink()) . '" rel="bookmark">' . $time_updated_string . '</a>'
+        );
+    }
+    function get_byline_string(){
+        return sprintf(
+        /* translators: %s: post author. */
+            esc_html_x( 'Published by %s', 'post author', 'mc_theme' ),
+            '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+        );
+    }
+
+    function mc_theme_metric() {
+        $updated_on = get_updated_on_string();
+
+        echo '<span class="posted-on">' . get_posted_on_string() . '</span>'; // WPCS: XSS OK.
+        if($updated_on !==''){
+            echo '<span class="updated-on">' . $updated_on . '</span>'; // WPCS: XSS OK.
+        }
+
+        echo '<span class="byline"> ' . get_byline_string() . '</span>'; // WPCS: XSS OK.
+
+    }
+endif;
+
 if ( ! function_exists( 'mc_theme_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.

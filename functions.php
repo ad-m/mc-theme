@@ -42,6 +42,7 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+        set_post_thumbnail_size( 100, 100);
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'mc_theme' ),
@@ -79,6 +80,16 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
 //			'flex-width'  => true,
 //			'flex-height' => true,
 //		) );
+        /**
+         * Disable attributes from thumbnail to manage them in CSS
+         *
+         * @link https://developer.wordpress.org/reference/functions/the_post_thumbnail/
+         */
+        function remove_img_attr ($html)
+        {
+            return preg_replace('/(width|height)="\d+"\s/', "", $html);
+        }
+        add_filter( 'post_thumbnail_html', 'remove_img_attr' );
 	}
 endif;
 add_action( 'after_setup_theme', 'mc_theme_setup' );
