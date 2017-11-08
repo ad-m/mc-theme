@@ -1,5 +1,5 @@
 @import 'wp-screen-reader-text';
-
+@import 'elementary';
 * {
   // outline: 1px solid red;
 }
@@ -259,30 +259,6 @@ a.article {
 
 .article__content {
   padding: 0;
-
-  blockquote {
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-  blockquote:before {
-    color: #ddd;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0;
-    //margin-right: -0.3em;
-    vertical-align: -0.3em;
-    margin-left: -0.5em;
-  }
-  blockquote p {
-    display: inline;
-    font-style: italic;
-    margin-top: 0;
-  }
-  blockquote footer {
-    color: darken(#737373, 5%);
-  }
-  img {
-    max-width: 100%;
-  }
 }
 
 .article__metrics {
