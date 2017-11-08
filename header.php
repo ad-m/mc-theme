@@ -55,7 +55,7 @@
 <div class="container navbar row">
     <div class="navbar__search">
         <form class="search-form">
-            <input class="search-form__input" type="search" name="query">
+            <input class="search-form__input" type="search" name="s">
             <button class="search-form__button" type="submit">Szukaj</button>
         </form>
     </div>
