@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-11-09 10:58-0500\n"
+"PO-Revision-Date: 2017-11-09 11:05-0500\n"
 "Last-Translator: ad-m <naczelnik@jawnosc.tk>\n"
 "Language-Team: Polish\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
@@ -20,20 +20,20 @@ msgstr ""
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Oops! Nie można odnaleźć strony."
 
 #: 404.php:21
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr ""
+msgstr "Wygląda na to, że nic nie został znaleziony w tej lokalizacji. Może spróbować jednego z poniższych linków lub wyszukiwania?"
 
 #: 404.php:30
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Najpopularniejsze kategorie"
 
 #. translators: %1$s: smiley
 #: 404.php:47
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Spróbuj poszukać w miesięcznych archiwach. %1$s"
 
 #. translators: 1: title.
 #: comments.php:34
@@ -55,23 +55,23 @@ msgstr ""
 
 #: footer.php:22
 msgid "About blog"
-msgstr ""
+msgstr "O blogu"
 
 #: footer.php:25
 msgid "This is the place for less formal communication, sharing experiences and making things available that can be important and interesting to you."
-msgstr ""
+msgstr "To jest miejsce do mniej formalnej komunikacji, wymiany doświadczeń oraz udostępnienia tych rzeczy, które dla Państwa mogą być istotne i ciekawe."
 
 #: footer.php:36
 msgid "Find us"
-msgstr ""
+msgstr "Znajdź nas"
 
 #: footer.php:39
 msgid "Address<br>Królewska 27<br> 00-500 Warsaw"
-msgstr ""
+msgstr "Adres<br>Królewska 27 <br>00-500 Warszawa"
 
 #: footer.php:40
 msgid "Openning hours<br>Monday-Friday 8:15-16:15"
-msgstr ""
+msgstr "Godziny<br>od poniedziałku do piątku w godzinach 8:15-16:15"
 
 #: footer.php:49
 msgid "Go to the Public Information Bulletin of the Ministry of Digital Affairs"
@@ -79,37 +79,37 @@ msgstr ""
 
 #: footer.php:54
 msgid "The articles on GOV.PL, which do not provide any additional information on copyright, are public information and are provided free of charge. Using them, regardless of purpose and usage, does not require the approval of the Ministry. Available under license <a href=\"%s\">Creative Commons Attribution 3.0 Poland</a>"
-msgstr ""
+msgstr "Artykuły zamieszczone w serwisie GOV.PL, w których nie podajemy żadnych dodatkowych informacji na temat praw autorskich, należą do informacji publicznych i udostępniamy je bezpłatnie. Korzystanie z nich, niezależnie od celu i sposobu korzystania, nie wymaga zgody Ministerstwa. Dostępne są w ramach licencji <a href=\"%s\">Creative Commons Uznanie Autorstwa 3.0 Polska</a>"
 
 #: footer.php:59
 msgid "https://wordpress.org/"
-msgstr ""
+msgstr "https://wordpress.org/"
 
 #. translators: %s: CMS name, i.e. WordPress.
 #: footer.php:61
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Dumnie napędzany przez %s"
 
 #. translators: 1: Theme name, 2: Theme author.
 #: footer.php:64
 msgid "Theme: %1$s by %2$s."
-msgstr ""
+msgstr "Motyw: %1$s przez %2$s."
 
 #: functions.php:48
 msgid "Primary"
-msgstr ""
+msgstr "Podstawowy"
 
 #: functions.php:132
 msgid "Home left"
-msgstr ""
+msgstr "Strona główna po lewej"
 
 #: functions.php:134 functions.php:143
 msgid "Add widgets here."
-msgstr ""
+msgstr "Dodaj widżet tutaj."
 
 #: functions.php:141
 msgid "Home right"
-msgstr ""
+msgstr "Strona główna po prawej"
 
 #. translators: %s: post date.
 #. translators: %s: post publish date.
