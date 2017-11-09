@@ -83,15 +83,19 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
         add_theme_support( 'starter-content', array(
             'posts' => array(
                 'home' => array(
-                    // Use a page template with the predefined about page
+                    'title' => _('Home page'),
                     'template' => 'page-home.php',
-                    'show_on_front' => 'page',
                 ),
+                'index' => array(
+                    'title' => _('Page for posts'),
+                    'template' => 'page-home.php',
+                ),
+
             ),
             'options' => array(
                 'show_on_front' => 'page',
                 'page_on_front' => '{{home}}',
-                'page_for_posts' => '{{home}}'
+                'page_for_posts' => '{{index}}'
             )
         ));
         /**
@@ -129,7 +133,7 @@ add_action( 'after_setup_theme', 'mc_theme_content_width', 0 );
 
 function mc_theme_widgets_init() {
     register_sidebar( array(
-        'name'          => esc_html__( 'Home left', 'mc_theme' ),
+        'name'          => esc_html__( 'Bottom-bar left', 'mc_theme' ),
         'id'            => 'home-left',
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
         'before_widget' => '',
@@ -138,7 +142,7 @@ function mc_theme_widgets_init() {
         'after_title'   => '</h2><span class="header__strip"></span></div>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Home right', 'mc_theme' ),
+        'name'          => esc_html__( 'Bottom-bar right', 'mc_theme' ),
         'id'            => 'home-right',
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
         'before_widget' => '',

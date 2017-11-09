@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mc_theme 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
-"POT-Creation-Date: 2017-11-09 17:23:10+00:00\n"
+"POT-Creation-Date: 2017-11-09 18:23:42+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -102,23 +102,32 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: functions.php:132
-msgid "Home left"
+#. #-#-#-#-#  mc_theme.pot (mc_theme 1.0.0)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: functions.php:86
+msgid "Home page"
 msgstr ""
 
-#: functions.php:134 functions.php:143
+#: functions.php:90
+msgid "Page for posts"
+msgstr ""
+
+#: functions.php:136
+msgid "Bottom-bar left"
+msgstr ""
+
+#: functions.php:138 functions.php:147
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:141
-msgid "Home right"
+#: functions.php:145
+msgid "Bottom-bar right"
 msgstr ""
 
 #. translators: 1: link to main website of ministry.
 #: header.php:38
 msgid ""
-"Go to <a href=\"%%s\">the main website of the Ministry of Digital Affairs</"
-"a>."
+"Go to <a href=\"%s\">the main website of the Ministry of Digital Affairs</a>."
 msgstr ""
 
 #. translators: %s: post date.
@@ -177,7 +186,16 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: page-home.php:38
+#: page-home.php:15
+msgid "Posts"
+msgstr ""
+
+#. translators: 1: link to public index of posts.
+#: page-home.php:22
+msgid "There is an <a href=\"%1$s\">archive of posts</a>."
+msgstr ""
+
+#: page-home.php:52
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
@@ -231,8 +249,4 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://facebook.com/adam.dobrawy"
-msgstr ""
-
-#. Template Name of the plugin/theme
-msgid "Home page"
 msgstr ""
