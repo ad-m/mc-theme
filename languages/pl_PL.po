@@ -1,0 +1,224 @@
+# Copyright (C) 2017 Karol Breguła & Kamil Breguła
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: mc-theme\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
+"POT-Creation-Date: 2017-11-09 15:04:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-11-09 11:12-0500\n"
+"Last-Translator: ad-m <naczelnik@jawnosc.tk>\n"
+"Language-Team: Polish\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: mc-theme\n"
+"X-Crowdin-Language: pl\n"
+"X-Crowdin-File: /master/languages/mc_theme.pot\n"
+"Language: pl_PL\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Nie można odnaleźć strony."
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Wygląda na to, że nic nie został znaleziony w tej lokalizacji. Może spróbować jednego z poniższych linków lub wyszukiwania?"
+
+#: 404.php:30
+msgid "Most Used Categories"
+msgstr "Najpopularniejsze kategorie"
+
+#. translators: %1$s: smiley
+#: 404.php:47
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Spróbuj poszukać w miesięcznych archiwach. %1$s"
+
+#. translators: 1: title.
+#: comments.php:34
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:40
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr "Komentarze są zamknięte."
+
+#: footer.php:22
+msgid "About blog"
+msgstr "O blogu"
+
+#: footer.php:25
+msgid "This is the place for less formal communication, sharing experiences and making things available that can be important and interesting to you."
+msgstr "To jest miejsce do mniej formalnej komunikacji, wymiany doświadczeń oraz udostępnienia tych rzeczy, które dla Państwa mogą być istotne i ciekawe."
+
+#: footer.php:36
+msgid "Find us"
+msgstr "Znajdź nas"
+
+#: footer.php:39
+msgid "Address<br>Królewska 27<br> 00-500 Warsaw"
+msgstr "Adres<br>Królewska 27 <br>00-500 Warszawa"
+
+#: footer.php:40
+msgid "Openning hours<br>Monday-Friday 8:15-16:15"
+msgstr "Godziny<br>od poniedziałku do piątku w godzinach 8:15-16:15"
+
+#: footer.php:49
+msgid "Go to the Public Information Bulletin of the Ministry of Digital Affairs"
+msgstr ""
+
+#: footer.php:54
+msgid "The articles on GOV.PL, which do not provide any additional information on copyright, are public information and are provided free of charge. Using them, regardless of purpose and usage, does not require the approval of the Ministry. Available under license <a href=\"%s\">Creative Commons Attribution 3.0 Poland</a>"
+msgstr "Artykuły zamieszczone w serwisie GOV.PL, w których nie podajemy żadnych dodatkowych informacji na temat praw autorskich, należą do informacji publicznych i udostępniamy je bezpłatnie. Korzystanie z nich, niezależnie od celu i sposobu korzystania, nie wymaga zgody Ministerstwa. Dostępne są w ramach licencji <a href=\"%s\">Creative Commons Uznanie Autorstwa 3.0 Polska</a>"
+
+#: footer.php:59
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:61
+msgid "Proudly powered by %s"
+msgstr "Dumnie napędzany przez %s"
+
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:64
+msgid "Theme: %1$s by %2$s."
+msgstr "Motyw: %1$s przez %2$s."
+
+#: functions.php:48
+msgid "Primary"
+msgstr "Podstawowy"
+
+#: functions.php:132
+msgid "Home left"
+msgstr "Strona główna po lewej"
+
+#: functions.php:134 functions.php:143
+msgid "Add widgets here."
+msgstr "Dodaj widżet tutaj."
+
+#: functions.php:141
+msgid "Home right"
+msgstr "Strona główna po prawej"
+
+#. translators: %s: post date.
+#. translators: %s: post publish date.
+#: inc/template-tags.php:29 inc/template-tags.php:63
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Opublikowano o %s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:35
+msgctxt "post author"
+msgid "by %s"
+msgstr "przez %s"
+
+#. translators: %s: post update date.
+#: inc/template-tags.php:78
+msgctxt "post date"
+msgid "Updated on %s"
+msgstr "Zaktualizowano %s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:85
+msgctxt "post author"
+msgid "Published by %s"
+msgstr "Opublikowane przez %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:111
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:114
+msgid "Posted in %1$s"
+msgstr "Opublikowano w %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:118
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:121
+msgid "Tagged %1$s"
+msgstr "Oznaczone jako %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:131
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Zostaw komentarz <span class=\"screen-reader-text\"> na %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:148
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Edycja <span class=\"screen-reader-text\">%s</span>"
+
+#: page-home.php:38
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "Wyniki wyszukiwania dla: %s"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nic nie znaleziono"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Gotowy, aby opublikować swój pierwszy post? <a href=\"%1$s\">Zacznij tutaj</a>."
+
+#: template-parts/content-none.php:38
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Niestety, ale nic nie odpowiada kryteriom wyszukiwania. Spróbuj ponownie z innymi słowami kluczowymi."
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:38
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Kontynuuj czytanie <span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. Theme Name of the plugin/theme
+msgid "mc_theme"
+msgstr "mc_theme"
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr "http://underscores.me/"
+
+#. Description of the plugin/theme
+msgid "Description"
+msgstr "Opis"
+
+#. Author of the plugin/theme
+msgid "Karol Breguła & Kamil Breguła"
+msgstr "Karol Breguła & Kamil Breguła"
+
+#. Author URI of the plugin/theme
+msgid "https://facebook.com/adam.dobrawy"
+msgstr "https://facebook.com/adam.dobrawy"
+
+#. Template Name of the plugin/theme
+msgid "Home page"
+msgstr "Strona główna"
+
