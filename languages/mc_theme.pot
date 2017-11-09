@@ -1,17 +1,16 @@
-# Copyright (C) 2017 Automattic
+# Copyright (C) 2017 Karol Breguła & Kamil Breguła
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: _s 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+"Project-Id-Version: mc_theme 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
+"POT-Creation-Date: 2017-11-09 15:04:31+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator:\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
@@ -19,89 +18,164 @@ msgstr ""
 
 #: 404.php:21
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
 
 #: 404.php:30
 msgid "Most Used Categories"
 msgstr ""
 
-#: 404.php:47
 #. translators: %1$s: smiley
+#: 404.php:47
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: comments.php:34
 #. translators: 1: title.
+#: comments.php:34
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
-#: comments.php:67
+#. translators: 1: comment count number, 2: title.
+#: comments.php:40
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:63
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:18
-msgid "https://wordpress.org/"
-msgstr ""
-
-#: footer.php:20
-#. translators: %s: CMS name, i.e. WordPress.
-msgid "Proudly powered by %s"
+#: footer.php:22
+msgid "About blog"
 msgstr ""
 
 #: footer.php:25
+msgid ""
+"This is the place for less formal communication, sharing experiences and "
+"making things available that can be important and interesting to you."
+msgstr ""
+
+#: footer.php:36
+msgid "Find us"
+msgstr ""
+
+#: footer.php:39
+msgid "Address<br>Królewska 27<br> 00-500 Warsaw"
+msgstr ""
+
+#: footer.php:40
+msgid "Openning hours<br>Monday-Friday 8:15-16:15"
+msgstr ""
+
+#: footer.php:49
+msgid ""
+"Go to the Public Information Bulletin of the Ministry of Digital Affairs"
+msgstr ""
+
+#: footer.php:54
+msgid ""
+"The articles on GOV.PL, which do not provide any additional information on "
+"copyright, are public information and are provided free of charge. Using "
+"them, regardless of purpose and usage, does not require the approval of the "
+"Ministry. Available under license <a href=\"%s\">Creative Commons "
+"Attribution 3.0 Poland</a>"
+msgstr ""
+
+#: footer.php:59
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:61
+msgid "Proudly powered by %s"
+msgstr ""
+
 #. translators: 1: Theme name, 2: Theme author.
+#: footer.php:64
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:47
+#: functions.php:48
 msgid "Primary"
 msgstr ""
 
-#: functions.php:105
-msgid "Sidebar"
+#: functions.php:132
+msgid "Home left"
 msgstr ""
 
-#: functions.php:107
+#: functions.php:134 functions.php:143
 msgid "Add widgets here."
 msgstr ""
 
-#: header.php:24
-msgid "Skip to content"
+#: functions.php:141
+msgid "Home right"
 msgstr ""
 
-#: header.php:45
-msgid "Primary Menu"
+#. translators: %s: post date.
+#. translators: %s: post publish date.
+#: inc/template-tags.php:29 inc/template-tags.php:63
+msgctxt "post date"
+msgid "Posted on %s"
 msgstr ""
 
-#: inc/template-tags.php:52
+#. translators: %s: post author.
+#: inc/template-tags.php:35
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: %s: post update date.
+#: inc/template-tags.php:78
+msgctxt "post date"
+msgid "Updated on %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:85
+msgctxt "post author"
+msgid "Published by %s"
+msgstr ""
+
 #. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:111
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:55
 #. translators: 1: list of categories.
+#: inc/template-tags.php:114
 msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:62
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:118
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
 #. translators: 1: list of tags.
+#: inc/template-tags.php:121
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/template-tags.php:72
 #. translators: %s: post title
+#: inc/template-tags.php:131
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-tags.php:89 template-parts/content-page.php:35
 #. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:148
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: search.php:21
+#: page-home.php:38
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
 #. translators: %s: search query.
+#: search.php:21
 msgid "Search Results for: %s"
 msgstr ""
 
@@ -109,9 +183,10 @@ msgstr ""
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/content-none.php:25
 #. translators: 1: link to WP admin new post page.
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#: template-parts/content-none.php:25
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-none.php:38
@@ -126,61 +201,31 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:22 template-parts/content.php:45
-msgid "Pages:"
-msgstr ""
-
-#: template-parts/content.php:34
 #. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:38
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "_s"
+msgid "mc_theme"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://underscores.me/"
+msgid "http://underscores.me/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if "
-"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
-"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
-"theme out there. That's what I'm here for."
+msgid "Description"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Automattic"
+msgid "Karol Breguła & Kamil Breguła"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://automattic.com/"
+msgid "https://facebook.com/adam.dobrawy"
 msgstr ""
 
-#: comments.php:40
-#. translators: 1: comment count number, 2: title.
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/template-tags.php:29
-#. translators: %s: post date.
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr ""
-
-#: inc/template-tags.php:35
-#. translators: %s: post author.
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#: inc/template-tags.php:59
-#. translators: used between list items, there is a space after the comma
-msgctxt "list item separator"
-msgid ", "
+#. Template Name of the plugin/theme
+msgid "Home page"
 msgstr ""
