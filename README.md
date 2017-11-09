@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/ad-m/mc-theme.svg?branch=master)](https://travis-ci.org/ad-m/mc-theme)
 
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/mc-theme/localized.svg)](https://crowdin.com/project/mc-theme)
+
 mc_theme
 ===
 
