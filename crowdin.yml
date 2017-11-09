@@ -1,0 +1,3 @@
+files:
+  - source: languages/mc_theme.pot
+    translation: languages/%locale_with_underscore%.po
