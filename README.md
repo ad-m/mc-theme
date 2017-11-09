@@ -30,3 +30,16 @@ W katalogu z wtyczką wykonaj:
 npm install
 gulp css
 ```
+
+Tłumaczenie
+---
+
+Edycja plików tłumaczeń jest realizowana ze wsparciem [projektu Crowdin.com](https://crowdin.com/project/mc-theme). 
+Zmiany wprowadzone w serwisie są synchronizowane z wydzielonym branchem ``l10n_master``. 
+W celu edycji plików tłumaczeń wprowadź zmiany na Crowdin.com. Następnie wykonaj poniższe, aby włączyć je do projektu:
+```
+git pull origin l10n_master 
+for file in `find . -name "*.po"` ; do msgfmt -o ${file/.po/.mo} $file ; done
+git commit -a -m "Update translation" -a;
+git push origin;
+```
