@@ -15,22 +15,36 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
-<!--<a class="skip-link screen-reader-text" href="#content">--><?php //esc_html_e( 'Skip to content', 'mc_theme' ); ?><!--</a>-->
+<!--<a class="skip-link screen-reader-text" href="#content">-->
+<?php //esc_html_e( 'Skip to content', 'mc_theme' ); ?><!--</a>-->
 
 <div class="container top-bar row">
     <div class="col-2">
         <a href="http://gov.pl/" class="top-bar__gov-pl">gov.pl</a>
     </div>
     <div class="col-10">
-        <p class="top-bar__welcome">Przejdź do <a href="mc.gov.pl/cyfryzacja">głównego serwisu Ministerstwa Cyfryzacji</a></p>
+        <p class="top-bar__welcome"><?php
+            printf(
+                wp_kses(
+                /* translators: 1: link to main website of ministry. */
+                    __('Go to <a href="%s">the main website of the Ministry of Digital Affairs</a>.', 'mc_theme'),
+                    array(
+                        'a' => array(
+                            'href' => array(),
+                        ),
+                    )
+                ),
+                "https://mc.gov.pl/cyfryzacja"
+            );
+            ?></p>
     </div>
 </div>
 
@@ -42,11 +56,11 @@
     </div>
     <div class="col-10">
         <div class="logo-bar__header">
-            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
             <?php
-            $description = get_bloginfo( 'description', 'display' );
-            if ( $description || is_customize_preview() ) : ?>
-            <p><?php echo $description; /* WPCS: xss ok. */ ?></p>
+            $description = get_bloginfo('description', 'display');
+            if ($description || is_customize_preview()) : ?>
+                <p><?php echo $description; /* WPCS: xss ok. */ ?></p>
             <?php endif; ?>
         </div>
     </div>
@@ -57,12 +71,12 @@
         <?php get_search_form(); ?>
     </div>
     <?php
-        wp_nav_menu( array(
-            'theme_location' => 'menu-1',
-            'menu_id'        => 'primary-menu',
-            'menu_class' => 'navbar__menu',
-            'depth' => 1
-        ) );
-        ?>
+    wp_nav_menu(array(
+        'theme_location' => 'menu-1',
+        'menu_id' => 'primary-menu',
+        'menu_class' => 'navbar__menu',
+        'depth' => 1
+    ));
+    ?>
 
 </div>
