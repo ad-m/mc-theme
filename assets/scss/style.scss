@@ -1,7 +1,7 @@
 @import 'wp-screen-reader-text';
 @import 'elementary';
 * {
-  // outline: 1px solid red;
+  //outline: 1px solid red;
 }
 *, *:before, *:after {
   box-sizing: border-box;
@@ -262,6 +262,9 @@ a.article {
   padding: 10px;
 }
 
+.article__title {
+  margin: 0;
+}
 .article__content {
   padding: 0;
 }
@@ -269,6 +272,9 @@ a.article {
 .article__metrics {
   //position: absolute;
   bottom: 0;
+  span {
+    display: block;
+  }
 }
 
 //
@@ -297,10 +303,13 @@ a.post-index {
 
 }
 
-.post-index__cover {
+.post-index__thumbnail {
   width: 100%;
 }
 
+.post-index__title {
+  margin: 0 0;
+}
 .post-index__meta {
   padding: 10px 0px;
 }

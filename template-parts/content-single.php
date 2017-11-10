@@ -8,7 +8,8 @@
  */
 
 ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class("row"); ?>>
+<div class="container">
+    <article id="post-<?php the_ID(); ?>" <?php post_class("row section"); ?>>
         <?php
         if (is_singular() && has_post_thumbnail()) :
             the_post_thumbnail('large', ['class' => 'article__cover']);
@@ -24,11 +25,11 @@
                 endif;
                 ?>
             </header><!-- .article__header -->
-            <?php /*
+
             <div class="article__excerpt">
                 <?php the_excerpt(); ?>
             </div><!-- .article__excerpt -->
-            */ ?>
+
             <div class="article__content">
                 <?php
                 the_content(sprintf(
@@ -42,38 +43,33 @@
                         )
                     ),
                     get_the_title()
-                ), !is_singular());
+                ));
 
                 ?>
             </div><!-- .article__content -->
-            <?php if (is_singular()) : ?>
 
-                <div class="article__navigation">
-                    <?php
-                    mc_theme_the_post_navigation();
-                    ?>
-                </div><!-- .article__navigation -->
-            <?php endif; ?>
+            <div class="article__navigation">
+                <?php
+                the_post_navigation();
+                ?>
+            </div><!-- .article__navigation -->
         </div>
         <div class="col-3">
             <div class="article__metrics">
                 <?php mc_theme_metric(); ?>
             </div>
-            <?php if (has_post_thumbnail() and !is_singular()): ?>
-                <div class="article__icon">
-                    <?php
-                    the_post_thumbnail("thumbnail", ['class' => "post-index__thumbnail"]);
-                    ?>
-                </div>
-            <?php endif; ?>
         </div>
     </article><!-- #post-<?php the_ID(); ?> -->
-<?php if (comments_open() || get_comments_number()) : ?>
     <div class="row">
         <div class="col-9">
             <?php
-            comments_template();
+
+            // If comments are open or we have at least one comment, load up the comment template.
+            if (comments_open() || get_comments_number()) :
+                comments_template();
+            endif;
+
             ?>
         </div>
     </div>
-<?php endif; ?>
+</div>

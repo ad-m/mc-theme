@@ -310,11 +310,16 @@ a.article {
 .article__meta {
   padding: 10px; }
 
+.article__title {
+  margin: 0; }
+
 .article__content {
   padding: 0; }
 
 .article__metrics {
   bottom: 0; }
+  .article__metrics span {
+    display: block; }
 
 .wp-caption {
   color: #777;
@@ -338,8 +343,11 @@ a.post-index {
 .post-index__excerpt {
   font-weight: bolder; }
 
-.post-index__cover {
+.post-index__thumbnail {
   width: 100%; }
+
+.post-index__title {
+  margin: 0 0; }
 
 .post-index__meta {
   padding: 10px 0px; }
