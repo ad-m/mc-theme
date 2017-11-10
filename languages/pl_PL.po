@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mc-theme\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
-"POT-Creation-Date: 2017-11-10 17:46+0100\n"
-"PO-Revision-Date: 2017-11-10 17:47+0100\n"
+"POT-Creation-Date: 2017-11-10 20:37+0100\n"
+"PO-Revision-Date: 2017-11-10 20:37+0100\n"
 "Last-Translator: Adam Dobrawy <naczelnik@jawnosc.tk>\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
@@ -82,12 +82,12 @@ msgstr "Adres<br>Królewska 27 <br>00-500 Warszawa"
 msgid "Openning hours<br>Monday-Friday 8:15-16:15"
 msgstr "Godziny<br>od poniedziałku do piątku 8:15-16:15"
 
-#: footer.php:49
+#: footer.php:51
 msgid ""
 "Go to the Public Information Bulletin of the Ministry of Digital Affairs"
 msgstr "Przejdź do Biuletyn Informacji Publicznej Ministerstwa Cyfryzacji"
 
-#: footer.php:54
+#: footer.php:56
 msgid ""
 "The articles on GOV.PL, which do not provide any additional information on "
 "copyright, are public information and are provided free of charge. Using "
@@ -102,17 +102,17 @@ msgstr ""
 "ramach licencji <a href=\"%s\">Creative Commons Uznanie Autorstwa 3.0 "
 "Polska</a>"
 
-#: footer.php:59
+#: footer.php:61
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
 #. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:61
+#: footer.php:63
 msgid "Proudly powered by %s"
 msgstr "Dumnie napędzany przez %s"
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:64
+#: footer.php:66
 msgid "Theme: %1$s by %2$s."
 msgstr "Motyw: %1$s przez %2$s."
 
@@ -133,13 +133,17 @@ msgstr "Strona dla postów"
 msgid "Bottom-bar left"
 msgstr "Lewy dolny obszar"
 
-#: functions.php:138 functions.php:147
+#: functions.php:138 functions.php:147 functions.php:156
 msgid "Add widgets here."
 msgstr "Dodaj widżet tutaj."
 
 #: functions.php:145
 msgid "Bottom-bar right"
 msgstr "Dolny prawy obszar"
+
+#: functions.php:154
+msgid "Contact section"
+msgstr "Sekcja kontaktowa"
 
 #. translators: 1: link to main website of ministry.
 #: header.php:38
@@ -242,7 +246,7 @@ msgid "Sorry, no posts matched your criteria."
 msgstr "Przepraszamy, żadne posty nie spełniają Twoich kryteriów."
 
 #. translators: %s: search query.
-#: search.php:20
+#: search.php:19
 msgid "Search Results for: %s"
 msgstr "Wyniki wyszukiwania dla: %s"
 
@@ -275,7 +279,7 @@ msgstr ""
 "Ci w tym pomoże."
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content-single.php:37 template-parts/content.php:37
+#: template-parts/content.php:34
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Kontynuuj czytanie <span class=\"screen-reader-text\"> \"%s\"</span>"
 

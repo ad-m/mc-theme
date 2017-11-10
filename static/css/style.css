@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100px;
   display: block;
   border-top: 2px solid red;
-  margin-left: -120px;
+  margin-left: -115px;
   position: relative;
   top: -8px; }
 
@@ -358,6 +358,14 @@ a.element {
 
 .authorship {
   text-align: center; }
+
+.contact-section {
+  background-color: #e2e2e2;
+  background-image: url("https://www.gov.pl/documents/31305/0/stopka_1366px.png/f6c910ff-010f-a6b2-874d-45b0c58c2b66?t=1504268063080");
+  background-position: right top;
+  color: #000; }
+  .contact-section .header__strip:after {
+    border-top-color: #000; }
 
 a.article {
   text-decoration: none; }

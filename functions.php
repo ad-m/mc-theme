@@ -150,6 +150,16 @@ function mc_theme_widgets_init() {
         'before_title'  => '<div class="header"><h2 class="widget-title">',
         'after_title'   => '</h2></div>',
     ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Contact section', 'mc_theme' ),
+        'id'            => 'contact-section',
+        'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
+        'before_widget' => '<div class="section row contact-section"><div class="col-6">',
+        'after_widget'  => '</div></div>',
+        'before_title'  => '<div class="header"><h2 class="widget-title">',
+        'after_title'   => '</h2><span class="header__strip"></span></div>',
+    ) );
+
 
 }
 add_action( 'widgets_init', 'mc_theme_widgets_init' );
