@@ -159,3 +159,24 @@ if ( ! function_exists( 'mc_theme_entry_footer' ) ) :
 		);
 	}
 endif;
+
+
+if ( ! function_exists( 'mc_theme_get_media_uri' ) ) :
+    /**
+     * Returns URI to media in template directory
+     */
+    function mc_theme_get_media_uri($path) {
+        return esc_url(get_template_directory_uri()."/".$path."?version=".wp_get_theme()->get( 'Version' ));
+    }
+endif;
+
+if ( ! function_exists( 'mc_theme_echo_media_uri' ) ) :
+    /**
+     * Echo URI to media in template directory
+     */
+    function mc_theme_echo_media_uri($path) {
+        echo mc_theme_get_media_uri($path);
+    }
+endif;
+
+

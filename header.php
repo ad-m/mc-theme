@@ -51,7 +51,7 @@
 <div class="container logo-bar row">
     <div class="col-2">
         <div class="logo-bar__logo">
-            <img src="https://www.gov.pl/image/layout_set_logo?img_id=244286&t=1509379516876">
+            <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg');?>">
         </div>
     </div>
     <div class="col-10">
