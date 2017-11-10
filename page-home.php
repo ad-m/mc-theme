@@ -12,7 +12,7 @@ get_header();
 
     <div class="section container">
     <div class="header">
-        <h1 class="header__title"><?php _e("Posts"); ?></h1>
+        <h1 class="header__title"><?php _e("Posts", 'mc_theme'); ?></h1>
         <span class="header__strip"></span>
         <div class="header__subtitle">
             <?php
@@ -49,7 +49,7 @@ get_header();
                 <?php wp_reset_postdata(); ?>
 
             <?php else : ?>
-                <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
+                <p><?php esc_html_e('Sorry, no posts matched your criteria.','mc_theme'); ?></p>
             <?php endif; ?>
 
         </div>
