@@ -369,9 +369,11 @@ $light_comment: 10px;
   list-style: none;
   padding-left: 0;
 
-  li {
+  .comment,.pingpack {
     padding: $light_comment 40px + $light_comment + $light_comment;
-    margin-bottom: 1px solid black;
+    border-style: solid;
+    border-color: darken(#f0f0f0, 15%);
+    border-width: 0px 1px;
   }
   .comment-body{
     color: #737373;
@@ -389,7 +391,7 @@ $light_comment: 10px;
     position: relative;
     .comment-author img {
       position: absolute;
-      left: -40px - $light_comment;
+      left: -32px - $light_comment;
       top: 0;
     }
     .says {
