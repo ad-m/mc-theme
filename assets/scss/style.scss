@@ -1,4 +1,13 @@
+%clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
 @import 'wp-screen-reader-text';
+@import 'wp-gallery';
 @import 'elementary';
 * {
   //outline: 1px solid red;
@@ -7,13 +16,6 @@
   box-sizing: border-box;
 }
 
-%clearfix {
-  &:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -269,6 +271,9 @@ a.article {
   padding: 0;
 }
 
+.article__navigation {
+  padding: 20px 0;
+}
 .article__metrics {
   //position: absolute;
   bottom: 0;
@@ -364,17 +369,20 @@ $light_comment: 10px;
   list-style: none;
   padding-left: 0;
 
+  li {
+    padding: $light_comment 40px + $light_comment + $light_comment;
+    margin-bottom: 1px solid black;
+  }
   .comment-body{
     color: #737373;
-    padding-left: 40px + $light_comment + $light_comment;
-    padding-top: $light_comment;
+
     border-bottom-width: 1px;
     border-bottom-color: green;
   }
-  .comment.even {
+  .even {
     background-color: #f0f0f0;
   }
-  .comment.odd {
+  .odd {
     background-color: #fff;
   }
   .comment-meta {
@@ -394,6 +402,7 @@ $light_comment: 10px;
   .children {
     padding-top: 25px;
     margin-top: 5px;
+    padding-left: 0;
     list-style:none;
   }
 }
@@ -402,13 +411,15 @@ $light_comment: 10px;
   .nav-previous {
     float: left;
   }
-  .nav-previous:before {
-    content: "←";
-  }
   .nav-next{
     float: right;
+    text-align: right;
   }
-  .nav-next:after{
-    content:"→";
+  .nav-next, .nav-previous {
+    width: 40%;
+    .label {
+    display: block;
+    }
   }
+
 }

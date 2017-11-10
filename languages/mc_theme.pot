@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mc_theme 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
-"POT-Creation-Date: 2017-11-09 18:23:42+00:00\n"
+"POT-Creation-Date: 2017-11-10 16:46:14+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -132,58 +132,77 @@ msgstr ""
 
 #. translators: %s: post date.
 #. translators: %s: post publish date.
-#: inc/template-tags.php:29 inc/template-tags.php:63
+#: inc/template-tags.php:30 inc/template-tags.php:64
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
 #. translators: %s: post author.
-#: inc/template-tags.php:35
+#: inc/template-tags.php:36
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
 #. translators: %s: post update date.
-#: inc/template-tags.php:78
+#: inc/template-tags.php:81
 msgctxt "post date"
 msgid "Updated on %s"
 msgstr ""
 
 #. translators: %s: post author.
-#: inc/template-tags.php:85
+#: inc/template-tags.php:90
 msgctxt "post author"
 msgid "Published by %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:111
+#: inc/template-tags.php:118
 msgid ", "
 msgstr ""
 
 #. translators: 1: list of categories.
-#: inc/template-tags.php:114
+#: inc/template-tags.php:121
 msgid "Posted in %1$s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:118
+#: inc/template-tags.php:125
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
 #. translators: 1: list of tags.
-#: inc/template-tags.php:121
+#: inc/template-tags.php:128
 msgid "Tagged %1$s"
 msgstr ""
 
 #. translators: %s: post title
-#: inc/template-tags.php:131
+#: inc/template-tags.php:138
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:148
+#: inc/template-tags.php:155
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:205
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:211
+msgid ""
+"<div class=\"nav-previous\"><span class=\"label\">Previous post:</span>"
+"%link</div>"
+msgstr ""
+
+#: inc/template-tags.php:219
+msgid ""
+"<div class=\"nav-next\"><span class=\"label\">Next post:</span>%link</div>"
+msgstr ""
+
+#: index.php:21
+msgid "Archive of posts"
 msgstr ""
 
 #: page-home.php:15
@@ -200,7 +219,7 @@ msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
 #. translators: %s: search query.
-#: search.php:21
+#: search.php:20
 msgid "Search Results for: %s"
 msgstr ""
 
@@ -227,7 +246,7 @@ msgid ""
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:38
+#: template-parts/content-single.php:37 template-parts/content.php:37
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 

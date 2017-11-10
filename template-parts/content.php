@@ -19,16 +19,13 @@
                 <?php
                 if (is_singular()) :
                     the_title('<h1 class="article__title">', '</h1>');
+                    ?><div class="header__strip"></div><?php
                 else :
                     the_title('<h2 class="article__title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
                 endif;
                 ?>
             </header><!-- .article__header -->
-            <?php /*
-            <div class="article__excerpt">
-                <?php the_excerpt(); ?>
-            </div><!-- .article__excerpt -->
-            */ ?>
+
             <div class="article__content">
                 <?php
                 the_content(sprintf(
@@ -47,10 +44,9 @@
                 ?>
             </div><!-- .article__content -->
             <?php if (is_singular()) : ?>
-
                 <div class="article__navigation">
                     <?php
-                    mc_theme_the_post_navigation();
+                    echo mc_theme_the_post_navigation();
                     ?>
                 </div><!-- .article__navigation -->
             <?php endif; ?>

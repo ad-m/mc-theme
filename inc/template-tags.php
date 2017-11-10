@@ -208,7 +208,7 @@ function mc_theme_the_post_navigation($args = array())
     $navigation = '';
 
     $previous = get_previous_post_link(
-        __('<div class="nav-previous"><span class="label">Next post:</span>%link</div>', 'mc_theme'),
+        __('<div class="nav-previous"><span class="label">Previous post:</span>%link</div>', 'mc_theme'),
         $args['prev_text'],
         $args['in_same_term'],
         $args['excluded_terms'],
