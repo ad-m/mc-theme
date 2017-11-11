@@ -270,7 +270,10 @@ a.article {
   font-weight: bolder;
 
 }
-
+.article {
+  min-height: 300px;
+  position: relative;
+}
 .article__cover {
   width: 100%;
 }
@@ -290,7 +293,7 @@ a.article {
   padding: 20px 0;
 }
 .article__metrics {
-  //position: absolute;
+  position: absolute;
   bottom: 0;
   span {
     display: block;
