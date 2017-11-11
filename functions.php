@@ -42,7 +42,7 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-        set_post_thumbnail_size( 100, 100);
+        set_post_thumbnail_size( 150, 150, true);
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'mc_theme' ),

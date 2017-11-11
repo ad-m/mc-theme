@@ -3,7 +3,7 @@
         <?php if (has_post_thumbnail()): ?>
             <div class="post-index__icon">
                 <?php
-                the_post_thumbnail("thumbnail", ['class' => "post-index__thumbnail"]);
+                the_post_thumbnail('post-thumbnail', ['class' => "post-index__thumbnail"]);
                 ?>
             </div>
         <?php endif; ?>

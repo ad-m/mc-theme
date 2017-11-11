@@ -34,7 +34,9 @@ get_header();
             <div class="row">
                 <?php
                 // the query
-                $the_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '6')); ?>
+                $the_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '6', 'ignore_sticky_posts' => true));
+                $i = 0;
+                ?>
 
                 <?php if ($the_query->have_posts()) : ?>
 
@@ -42,10 +44,15 @@ get_header();
                     <!-- the loop -->
                     <?php while ($the_query->have_posts()) : $the_query->the_post();
                         get_template_part('template-parts/home', get_post_format());
+                        ?>
+                        <?php if ($i % 2 == 1): ?>
+                            <div class="clearfix"></div>
+                        <?php endif;
+                        $i += 1;
+                        ?>
 
-                    endwhile; ?>
+                    <?php endwhile; ?>
                     <!-- end of the loop -->
-
                     <?php wp_reset_postdata(); ?>
 
                 <?php else : ?>

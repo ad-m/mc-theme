@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5,h6{
   margin: 0 -8px;
 }
 
+.clearfix {
+  @extend %clearfix;
+}
+
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: percentage($i/12);
@@ -293,7 +297,6 @@ a.article {
   }
 }
 
-//
 .wp-caption {
   color: #777;
   background-color: #F3F3F3;
@@ -318,6 +321,9 @@ a.post-index {
   font-weight: bolder;
 
 }
+.post-index__icon {
+  width: 150px;
+}
 
 .post-index__thumbnail {
   width: 100%;
@@ -332,6 +338,7 @@ a.post-index {
 
 .post-index__content {
   padding: 0 10px;
+  flex: 1;
 
 }
 .post-index__metrics {
