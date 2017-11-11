@@ -43,3 +43,13 @@ for file in `find . -name "*.po"` ; do msgfmt -o ${file/.po/.mo} $file ; done
 git commit -a -m "Update translation" -a;
 git push origin;
 ```
+
+Uwagi na temat finansowania i autorstwa
+---
+
+Oprogramowanie stworzone przez Karola Bregułę na rzecz Ministerstwa Cyfryzacji w ramach projektu "Staż - najlepszy start!"
+realizowanym przez Uniwersytet Przyrodniczo – Humanistyczny w Siedlcach
+w ramach Programu Operacyjnego Wiedza Edukacja Rozwój,
+oś Priorytetowa III Szkolnictwo wyższe dla gospodarki i rozwoju,
+działanie 3.1 Kompetencje w szkolnictwie wyższym,
+nr projektu: POWR.03.01.00-00-S227/15
