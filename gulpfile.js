@@ -47,7 +47,7 @@ gulp.task('live-reload', function() {
 gulp.task('build', ['js','css']);
 
 gulp.task('watch', ['live-reload'], function(){
-   gulp.watch('assets/scss/**/*.scss', ['build']);
+    gulp.watch(['assets/scss/**/*.scss', 'assets/js/**/*.js'], ['build']);
 });
 
 gulp.task('default', ['build', 'watch']);

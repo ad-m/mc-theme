@@ -28,7 +28,7 @@ Budowanie
 W katalogu z wtyczką wykonaj:
 ```
 npm install
-gulp css
+gulp build
 ```
 
 Tłumaczenie
