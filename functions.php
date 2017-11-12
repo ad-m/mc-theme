@@ -148,13 +148,13 @@ function mc_theme_widgets_init() {
         'before_widget' => '',
         'after_widget'  => '',
         'before_title'  => '<div class="header"><h2 class="widget-title">',
-        'after_title'   => '</h2></div>',
+        'after_title'   => '</h2><span class="header__md-strip"></span></div>',
     ) );
     register_sidebar( array(
         'name'          => esc_html__( 'Contact section', 'mc_theme' ),
         'id'            => 'contact-section',
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
-        'before_widget' => '<div class="section row contact-section"><div class="col-lg-6">',
+        'before_widget' => '<div class="section row contact-section"><div class="col-sm-6">',
         'after_widget'  => '</div></div>',
         'before_title'  => '<div class="header"><h2 class="widget-title">',
         'after_title'   => '</h2><span class="header__strip"></span></div>',

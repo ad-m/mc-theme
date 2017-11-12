@@ -9,13 +9,16 @@
 
 ?>
     <article id="post-<?php the_ID(); ?>" class="article">
-        <?php
-        if (is_singular() && has_post_thumbnail()) :
-            the_post_thumbnail('large', ['class' => 'article__cover']);
-        endif;
-        ?>
+        <?php if (is_singular() && has_post_thumbnail()) : ?>
+            <div class="row">
+                <div class="col-xs-12">
+                    <?php the_post_thumbnail('large', ['class' => 'article__cover']); ?>
+
+                </div>
+            </div>
+        <?php endif; ?>
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-sm-9 col-xs-12">
                 <header class="article__header">
                     <?php
                     if (is_singular()) :
@@ -45,6 +48,24 @@
 
                     ?>
                 </div><!-- .article__content -->
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+                <div class="row">
+                <div class="article__metrics col-xs-6 col-sm-12">
+                    <?php mc_theme_metric(); ?>
+                </div>
+                <?php if (has_post_thumbnail() and !is_singular()): ?>
+                    <div class="article__icon col-xs-5 col-sm-12">
+                        <?php
+                        the_post_thumbnail("thumbnail", ['class' => "post-index__thumbnail"]);
+                        ?>
+                    </div>
+                <?php endif; ?>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 col-xs-12">
                 <?php if (is_singular()) : ?>
                     <div class="article__navigation">
                         <?php
@@ -52,24 +73,13 @@
                         ?>
                     </div><!-- .article__navigation -->
                 <?php endif; ?>
-            </div>
-            <div class="col-lg-3">
-                <div class="article__metrics">
-                    <?php mc_theme_metric(); ?>
-                </div>
-                <?php if (has_post_thumbnail() and !is_singular()): ?>
-                    <div class="article__icon">
-                        <?php
-                        the_post_thumbnail("thumbnail", ['class' => "post-index__thumbnail"]);
-                        ?>
-                    </div>
-                <?php endif; ?>
+
             </div>
         </div>
     </article><!-- #post-<?php the_ID(); ?> -->
 <?php if (comments_open() || get_comments_number()) : ?>
     <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-9 col-xs-12">
             <?php
             comments_template();
             ?>

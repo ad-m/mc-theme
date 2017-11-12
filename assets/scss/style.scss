@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5,h6{
 
 .section {
   padding-left: percentage(1/12);
-  padding-bottom: 100px;
+  padding-bottom: 96px;
 }
 
 .header {
-  padding: 10px 0;
+  padding: 8px 0;
   margin-bottom: 16px;
 }
 
@@ -49,18 +49,38 @@ h1, h2, h3, h4, h5,h6{
   margin-bottom: 16px;
 }
 
-.header__strip {
-  &:after {
-    content: '';
-    height: 0;
-    width: 100px;
-    display: block;
-    border-top: 2px solid red;
-    margin-left: -115px;
-    position: relative;
-    top: -8px;
+@mixin make-header-strip($infix) {
+  .header__#{$infix}strip {
+    &:after {
+      content: '';
+      height: 0;
+      width: 96px;
+      display: block;
+      border-top: 2px solid red;
+      margin-left: -108px;  // TODO: Verify why not 104 (8*13)
+      position: relative;
+      top: -8px;
+    }
   }
 }
+
+@media (#{$xs-media-max}) {
+  @include make-header-strip('xs-');
+}
+
+@media (#{$sm-media-max}) {
+  @include make-header-strip('sm-');
+}
+
+@media (#{$md-media-max}) {
+  @include make-header-strip('md-');
+}
+
+@media (#{$lg-media-max}) {
+  @include make-header-strip('lg-');
+}
+
+@include make-header-strip('');
 
 .header__subtitle {
   color: #737373;
@@ -68,13 +88,13 @@ h1, h2, h3, h4, h5,h6{
 
 .element {
   display: flex;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 a.element {
   text-decoration: none;
 }
 .element__content {
-  padding: 10px;
+  padding: 8px;
   flex-grow: 1;
   align-self: center;
 }
@@ -88,7 +108,7 @@ a.element {
 }
 
 .external-note {
-  padding: 10px;
+  padding: 8px;
 }
 .external-note p {
   margin: 0 0;
@@ -97,9 +117,9 @@ a.element {
 .blue-button {
   background-color: #005eb5;
   color: #fff;
-  padding: 10px;
+  padding: 8px;
   display: block;
-  margin: 10px 0;
+  margin: 8px 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -109,7 +129,7 @@ a.element {
   float: left;
 }
 .top-bar__welcome {
-  margin-left:  100px;
+  margin-left:  96px;
 
 }
 .top-bar__gov-pl {
@@ -119,7 +139,7 @@ a.element {
   font-size: 1.5rem;
   text-decoration: none;
   //height: 56px - 20px;
-  padding: 10px;
+  padding: 8px;
   line-height: 1.5rem;
 }
 .top-bar__welcome {
@@ -127,7 +147,7 @@ a.element {
   font-size: 1rem;
   //margin: 0;
   //height: 56px - 20px;
-  padding: 10px 10px;
+  padding: 8px 8px;
   line-height: 1.5rem;
 }
 
@@ -135,15 +155,13 @@ a.element {
   position: relative;
   float: right;
   img {
-    max-height: 120px;
     max-width: none;
-    height: 10vw;
-
+    height: 120px;
   }
 }
 
 .logo-bar__header {
-  padding: 10px 10px;
+  padding: 8px 8px;
   font-family: Georgia, serif;
   a {
     text-decoration: none;
@@ -167,10 +185,10 @@ a.element {
 .navbar__menu a {
   display: inline-block;
   text-decoration: none;
-  padding: 20px;
+  padding: 16px;
   margin-left: 0;
   padding-right: 0;
-  margin-right: 20px;
+  margin-right: 16px;
   font-size: 1.25em;
   &:first-child {
     padding-left: 0;
@@ -186,10 +204,10 @@ a.element {
 
 .navbar__search {
   float: right;
-  width: 300px;
+  width: 304px;
 }
 .search-form {
-  padding: 20px 10px;
+  padding: 16px 8px;
   display: table;
   width: 100%;
   table-layout: fixed;
@@ -215,9 +233,9 @@ a.element {
 }
 .search-submit {
   display: table-cell;
-  width: 90px;
+  width: 96px;
   background-color: white;
-  margin-left: 5px;
+  margin-left: 8px;
   transition: 0.2s background-color;
   &:hover,
   &:focus {
@@ -233,7 +251,7 @@ a.element {
   }
   img {
     vertical-align: middle;
-    padding: 10px;
+    padding: 8px;
     height: 8em;
   }
 }
@@ -243,14 +261,17 @@ a.element {
 }
 
 
+
 .contact-section {
   background-color: rgb(226, 226, 226);
-  background-image: url("../img/contact-section.png");
-  background-position: right top;
   color: #000;
   .header__strip:after {
     border-top-color: #000;
   };
+  @media (#{$sm-media}) {
+    background-image: url("../img/contact-section.png");
+    background-position: right top;
+  }
 }
 
 // single article - single post on single /  archive pages
@@ -262,7 +283,7 @@ a.article {
 
 }
 .article {
-  min-height: 300px;
+  min-height: 304px;
   position: relative;
 }
 .article__cover {
@@ -270,7 +291,7 @@ a.article {
 }
 
 .article__meta {
-  padding: 10px;
+  padding: 8px;
 }
 
 .article__title {
@@ -281,11 +302,14 @@ a.article {
 }
 
 .article__navigation {
-  padding: 20px 0;
+  padding: 16px 0;
 }
 .article__metrics {
-  position: absolute;
+  @media (#{$lg-media}) {
+
+    position: absolute;
   bottom: 0;
+  }
   span {
     display: block;
   }
@@ -295,18 +319,17 @@ a.article {
   color: #777;
   background-color: #F3F3F3;
   border: 1px solid #DDD;
-  padding: 10px;
+  padding: 16px;
   max-width: 100%;
 }
 .wp-caption-text, .wp-caption {
-  margin-top: 12px;
+  margin-top: 16px;
   text-align: center;
-  margin-bottom: 12px;
 }
 // post-index - section on home page with cover which list posts
 .post-index {
   display: flex;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 a.post-index {
   text-decoration: none;
@@ -327,11 +350,11 @@ a.post-index {
   margin: 0 0;
 }
 .post-index__meta {
-  padding: 10px 0px;
+  padding: 8px 0px;
 }
 
 .post-index__content {
-  padding: 0 10px;
+  padding: 0 8px;
   flex: 1;
 
 }
@@ -343,7 +366,7 @@ a.post-index {
 // comment-form - form below single post to add comment
 .comment-form {
   & label {
-    padding: 10px 0;
+    padding: 8px 0;
     display: block;
   }
   input {
@@ -375,7 +398,7 @@ a.post-index {
 }
 
 // comment-form - nested list of comment below single post
-$light_comment: 10px;
+$light_comment: 8px;
 .comment-list {
   // TODO: Too little light in section? Increase paddings?
   list-style: none;
@@ -383,9 +406,10 @@ $light_comment: 10px;
 
   .comment,.pingpack {
     padding: $light_comment 40px + $light_comment + $light_comment;
+    padding-right: 0;
     border-style: solid;
     border-color: darken(#f0f0f0, 15%);
-    border-width: 0px 1px;
+    border-width: 0 1px;
   }
   .comment-body{
     color: #737373;
@@ -414,14 +438,16 @@ $light_comment: 10px;
     }
   }
   .children {
-    padding-top: 25px;
-    margin-top: 5px;
+    padding-top: 16px;
+    margin-top: 8px;
     padding-left: 0;
     list-style:none;
   }
 }
 
 .navigation {
+  padding: 32px 0;
+
   .nav-previous {
     float: left;
   }

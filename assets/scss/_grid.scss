@@ -21,6 +21,10 @@ $xs-media: "min-width: 576px";
 $sm-media: "min-width: 768px";
 $md-media: "min-width: 992px";
 $lg-media: "min-width: 1200px";
+$xs-media-max: "max-width: 576px";
+$sm-media-max: "max-width: 768px";
+$md-media-max: "max-width: 992px";
+$lg-media-max: "max-width: 1200px";
 
 @media (#{$xs-media}) {
   @include make-columns('col-xs-', 12);

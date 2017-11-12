@@ -339,23 +339,67 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
   padding-left: 8.33333%;
-  padding-bottom: 100px; }
+  padding-bottom: 96px; }
 
 .header {
-  padding: 10px 0;
+  padding: 8px 0;
   margin-bottom: 16px; }
 
 .header__title {
   margin: 0;
   margin-bottom: 16px; }
 
+@media (max-width: 576px) {
+  .header__xs-strip:after {
+    content: '';
+    height: 0;
+    width: 96px;
+    display: block;
+    border-top: 2px solid red;
+    margin-left: -108px;
+    position: relative;
+    top: -8px; } }
+
+@media (max-width: 768px) {
+  .header__sm-strip:after {
+    content: '';
+    height: 0;
+    width: 96px;
+    display: block;
+    border-top: 2px solid red;
+    margin-left: -108px;
+    position: relative;
+    top: -8px; } }
+
+@media (max-width: 992px) {
+  .header__md-strip:after {
+    content: '';
+    height: 0;
+    width: 96px;
+    display: block;
+    border-top: 2px solid red;
+    margin-left: -108px;
+    position: relative;
+    top: -8px; } }
+
+@media (max-width: 1200px) {
+  .header__lg-strip:after {
+    content: '';
+    height: 0;
+    width: 96px;
+    display: block;
+    border-top: 2px solid red;
+    margin-left: -108px;
+    position: relative;
+    top: -8px; } }
+
 .header__strip:after {
   content: '';
   height: 0;
-  width: 100px;
+  width: 96px;
   display: block;
   border-top: 2px solid red;
-  margin-left: -115px;
+  margin-left: -108px;
   position: relative;
   top: -8px; }
 
@@ -366,13 +410,13 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0; }
+  padding: 8px 0; }
 
 a.element {
   text-decoration: none; }
 
 .element__content {
-  padding: 10px;
+  padding: 8px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -386,7 +430,7 @@ a.element {
   display: block; }
 
 .external-note {
-  padding: 10px; }
+  padding: 8px; }
 
 .external-note p {
   margin: 0 0; }
@@ -394,9 +438,9 @@ a.element {
 .blue-button {
   background-color: #005eb5;
   color: #fff;
-  padding: 10px;
+  padding: 8px;
   display: block;
-  margin: 10px 0;
+  margin: 8px 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -406,32 +450,31 @@ a.element {
   float: left; }
 
 .top-bar__welcome {
-  margin-left: 100px; }
+  margin-left: 96px; }
 
 .top-bar__gov-pl {
   color: #1a1a1a;
   font-weight: bolder;
   font-size: 1.5rem;
   text-decoration: none;
-  padding: 10px;
+  padding: 8px;
   line-height: 1.5rem; }
 
 .top-bar__welcome {
   color: #737373;
   font-size: 1rem;
-  padding: 10px 10px;
+  padding: 8px 8px;
   line-height: 1.5rem; }
 
 .logo-bar__logo {
   position: relative;
   float: right; }
   .logo-bar__logo img {
-    max-height: 120px;
     max-width: none;
-    height: 10vw; }
+    height: 120px; }
 
 .logo-bar__header {
-  padding: 10px 10px;
+  padding: 8px 8px;
   font-family: Georgia, serif; }
   .logo-bar__header a {
     text-decoration: none;
@@ -450,10 +493,10 @@ a.element {
 .navbar__menu a {
   display: inline-block;
   text-decoration: none;
-  padding: 20px;
+  padding: 16px;
   margin-left: 0;
   padding-right: 0;
-  margin-right: 20px;
+  margin-right: 16px;
   font-size: 1.25em; }
   .navbar__menu a:first-child {
     padding-left: 0; }
@@ -464,10 +507,10 @@ a.element {
 
 .navbar__search {
   float: right;
-  width: 300px; }
+  width: 304px; }
 
 .search-form {
-  padding: 20px 10px;
+  padding: 16px 8px;
   display: table;
   width: 100%;
   table-layout: fixed; }
@@ -491,9 +534,9 @@ a.element {
 
 .search-submit {
   display: table-cell;
-  width: 90px;
+  width: 96px;
   background-color: white;
-  margin-left: 5px;
+  margin-left: 8px;
   -webkit-transition: 0.2s background-color;
   transition: 0.2s background-color; }
   .search-submit:hover, .search-submit:focus {
@@ -506,7 +549,7 @@ a.element {
     color: #737373; }
   .site-footer img {
     vertical-align: middle;
-    padding: 10px;
+    padding: 8px;
     height: 8em; }
 
 .authorship {
@@ -514,11 +557,13 @@ a.element {
 
 .contact-section {
   background-color: #e2e2e2;
-  background-image: url("../img/contact-section.png");
-  background-position: right top;
   color: #000; }
   .contact-section .header__strip:after {
     border-top-color: #000; }
+  @media (min-width: 768px) {
+    .contact-section {
+      background-image: url("../img/contact-section.png");
+      background-position: right top; } }
 
 a.article {
   text-decoration: none; }
@@ -527,14 +572,14 @@ a.article {
   font-weight: bolder; }
 
 .article {
-  min-height: 300px;
+  min-height: 304px;
   position: relative; }
 
 .article__cover {
   width: 100%; }
 
 .article__meta {
-  padding: 10px; }
+  padding: 8px; }
 
 .article__title {
   margin: 0; }
@@ -543,31 +588,32 @@ a.article {
   padding: 0; }
 
 .article__navigation {
-  padding: 20px 0; }
+  padding: 16px 0; }
 
-.article__metrics {
-  position: absolute;
-  bottom: 0; }
-  .article__metrics span {
-    display: block; }
+@media (min-width: 1200px) {
+  .article__metrics {
+    position: absolute;
+    bottom: 0; } }
+
+.article__metrics span {
+  display: block; }
 
 .wp-caption {
   color: #777;
   background-color: #F3F3F3;
   border: 1px solid #DDD;
-  padding: 10px;
+  padding: 16px;
   max-width: 100%; }
 
 .wp-caption-text, .wp-caption {
-  margin-top: 12px;
-  text-align: center;
-  margin-bottom: 12px; }
+  margin-top: 16px;
+  text-align: center; }
 
 .post-index {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0; }
+  padding: 8px 0; }
 
 a.post-index {
   text-decoration: none; }
@@ -585,10 +631,10 @@ a.post-index {
   margin: 0 0; }
 
 .post-index__meta {
-  padding: 10px 0px; }
+  padding: 8px 0px; }
 
 .post-index__content {
-  padding: 0 10px;
+  padding: 0 8px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
@@ -597,7 +643,7 @@ a.post-index {
   bottom: 0; }
 
 .comment-form label {
-  padding: 10px 0;
+  padding: 8px 0;
   display: block; }
 
 .comment-form input {
@@ -626,10 +672,11 @@ a.post-index {
   list-style: none;
   padding-left: 0; }
   .comment-list .comment, .comment-list .pingpack {
-    padding: 10px 60px;
+    padding: 8px 56px;
+    padding-right: 0;
     border-style: solid;
     border-color: #cacaca;
-    border-width: 0px 1px; }
+    border-width: 0 1px; }
   .comment-list .comment-body {
     color: #737373;
     border-bottom-width: 1px;
@@ -642,26 +689,26 @@ a.post-index {
     position: relative; }
     .comment-list .comment-meta .comment-author img {
       position: absolute;
-      left: -42px;
+      left: -40px;
       top: 0; }
     .comment-list .comment-meta .says {
       display: none; }
     .comment-list .comment-meta .edit-link {
       display: none; }
   .comment-list .children {
-    padding-top: 25px;
-    margin-top: 5px;
+    padding-top: 16px;
+    margin-top: 8px;
     padding-left: 0;
     list-style: none; }
 
-.navigation .nav-previous {
-  float: left; }
-
-.navigation .nav-next {
-  float: right;
-  text-align: right; }
-
-.navigation .nav-next, .navigation .nav-previous {
-  width: 40%; }
-  .navigation .nav-next .label, .navigation .nav-previous .label {
-    display: block; }
+.navigation {
+  padding: 32px 0; }
+  .navigation .nav-previous {
+    float: left; }
+  .navigation .nav-next {
+    float: right;
+    text-align: right; }
+  .navigation .nav-next, .navigation .nav-previous {
+    width: 40%; }
+    .navigation .nav-next .label, .navigation .nav-previous .label {
+      display: block; }
