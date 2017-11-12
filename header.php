@@ -26,35 +26,39 @@
 <!--<a class="skip-link screen-reader-text" href="#content">-->
 <?php //esc_html_e( 'Skip to content', 'mc_theme' ); ?><!--</a>-->
 
-<div class="container top-bar row">
-    <div class="col-2">
-        <a href="http://gov.pl/" class="top-bar__gov-pl">gov.pl</a>
-    </div>
-    <div class="col-10">
-        <p class="top-bar__welcome"><?php
-            printf(
-                wp_kses(
-                /* translators: 1: link to main website of ministry. */
-                    __('Go to <a href="%s">the main website of the Ministry of Digital Affairs</a>.', 'mc_theme'),
-                    array(
-                        'a' => array(
-                            'href' => array(),
+<div class="top-bar">
+    <div class="container">
+<!--        <div class="row">-->
+<!--            <div class="col-xs-4 col-md-3 col-lg-2">-->
+                <a href="http://gov.pl/" class="top-bar__gov-pl">gov.pl</a>
+<!--            </div>-->
+<!--            <div class="col-xs-4 col-md-9 col-lg-10 ">-->
+                <p class="top-bar__welcome"><?php
+                    printf(
+                        wp_kses(
+                        /* translators: 1: link to main website of ministry. */
+                            __('Go to <a href="%s">the main website of the Ministry of Digital Affairs</a>.', 'mc_theme'),
+                            array(
+                                'a' => array(
+                                    'href' => array(),
+                                ),
+                            )
                         ),
-                    )
-                ),
-                "https://mc.gov.pl/cyfryzacja"
-            );
-            ?></p>
+                        "https://mc.gov.pl/cyfryzacja"
+                    );
+                    ?></p>
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </div>
 
 <div class="container logo-bar row">
-    <div class="col-2">
+    <div class="col-lg-2 col-xs-1">
         <div class="logo-bar__logo">
             <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg');?>">
         </div>
     </div>
-    <div class="col-10">
+    <div class="col-lg-10">
         <div class="logo-bar__header">
             <h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
             <?php

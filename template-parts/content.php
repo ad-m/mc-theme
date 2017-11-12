@@ -15,7 +15,7 @@
         endif;
         ?>
         <div class="row">
-            <div class="col-9">
+            <div class="col-lg-9">
                 <header class="article__header">
                     <?php
                     if (is_singular()) :
@@ -53,7 +53,7 @@
                     </div><!-- .article__navigation -->
                 <?php endif; ?>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
                 <div class="article__metrics">
                     <?php mc_theme_metric(); ?>
                 </div>
@@ -69,7 +69,7 @@
     </article><!-- #post-<?php the_ID(); ?> -->
 <?php if (comments_open() || get_comments_number()) : ?>
     <div class="row">
-        <div class="col-9">
+        <div class="col-lg-9">
             <?php
             comments_template();
             ?>

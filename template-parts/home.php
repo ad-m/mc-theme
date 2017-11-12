@@ -1,4 +1,4 @@
-<div class="col-6">
+<div class="col-lg-6">
     <div class="post-index">
         <?php if (has_post_thumbnail()): ?>
             <div class="post-index__icon">

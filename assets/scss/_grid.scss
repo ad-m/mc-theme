@@ -1,0 +1,45 @@
+.row {
+  @extend %clearfix;
+  margin: 0 -8px;
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+@mixin make-columns($prefix, $columns) {
+  @for $i from 1 through $columns {
+    .#{$prefix}#{$i} {
+      width: percentage($i / $columns);
+      float: left;
+      padding: 8px;
+    }
+  }
+}
+
+$xs-media: "min-width: 576px";
+$sm-media: "min-width: 768px";
+$md-media: "min-width: 992px";
+$lg-media: "min-width: 1200px";
+
+@media (#{$xs-media}) {
+  @include make-columns('col-xs-', 12);
+}
+
+@media (#{$sm-media}) {
+  @include make-columns('col-sm-', 12);
+}
+
+@media (#{$md-media}) {
+  @include make-columns('col-md-', 12);
+}
+
+@media (#{$lg-media}) {
+  @include make-columns('col-lg-', 12);
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
