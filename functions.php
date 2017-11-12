@@ -154,7 +154,7 @@ function mc_theme_widgets_init() {
         'name'          => esc_html__( 'Contact section', 'mc_theme' ),
         'id'            => 'contact-section',
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
-        'before_widget' => '<div class="section row contact-section"><div class="col-6">',
+        'before_widget' => '<div class="section row contact-section"><div class="col-lg-6">',
         'after_widget'  => '</div></div>',
         'before_title'  => '<div class="header"><h2 class="widget-title">',
         'after_title'   => '</h2><span class="header__strip"></span></div>',
@@ -170,9 +170,11 @@ add_action( 'widgets_init', 'mc_theme_widgets_init' );
 function mc_theme_scripts() {
     wp_enqueue_style( 'mc_theme-style', get_template_directory_uri() . '/static/css/style.css');
 
-    wp_enqueue_script( 'mc_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'mc_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    if(WP_DEBUG){
+        wp_enqueue_script( 'mc_theme-script', get_template_directory_uri() . '/static/js/script.js', array(), '20151215', true );
+    }else{
+        wp_enqueue_script( 'mc_theme-script', get_template_directory_uri() . '/static/js/script.min.js', array(), '20151215', true );
+    }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
