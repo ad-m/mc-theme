@@ -1,0 +1,34 @@
+@mixin make-hide-size($postfix) {
+    .#{$postfix} {
+        display: none;
+    }
+}
+
+@media (#{$xs-media}) {
+    @include make-hide-size('hide-xs');
+}
+
+@media (#{$sm-media}) {
+    @include make-hide-size('hide-sm');
+}
+
+@media (#{$md-media}) {
+    @include make-hide-size('hide-md');
+}
+
+@media (#{$lg-media}) {
+    @include make-hide-size('hide-lg');
+}
+
+@media (#{$xs-media-max}) {
+    @include make-hide-size('hide-xs-max');
+}
+@media (#{$sm-media-max}) {
+    @include make-hide-size('hide-sm-max');
+}
+@media (#{$md-media-max}) {
+    @include make-hide-size('hide-md-max');
+}
+@media (#{$lg-media-max}) {
+    @include make-hide-size('hide-lg-max');
+}

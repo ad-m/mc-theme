@@ -51,16 +51,22 @@
             </div>
             <div class="col-lg-3 col-sm-3 col-xs-12">
                 <div class="row">
-                <div class="article__metrics col-xs-6 col-sm-12">
-                    <?php mc_theme_metric(); ?>
-                </div>
-                <?php if (has_post_thumbnail() and !is_singular()): ?>
-                    <div class="article__icon col-xs-5 col-sm-12">
-                        <?php
-                        the_post_thumbnail("thumbnail", ['class' => "post-index__thumbnail"]);
-                        ?>
+                    <div class="col-xs-6 col-sm-12">
+                     <div class="article_metrics__wrapper">
+                            <div class="article__metrics">
+                                <?php mc_theme_metric(); ?>
+                            </div>
+                        </div>
                     </div>
-                <?php endif; ?>
+                    <?php if (has_post_thumbnail() and !is_singular()): ?>
+                        <div class="col-xs-5 col-sm-12">
+                            <div class="article__icon">
+                                <?php
+                                the_post_thumbnail("thumbnail", ['class' => "post-index__thumbnail"]);
+                                ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

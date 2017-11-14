@@ -63,13 +63,18 @@
         </div>
     </div>
     <footer class="authorship site-footer">
-        <p><a href="<?php echo esc_url(__('https://wordpress.org/', 'mc_theme')); ?>"><?php
+        <p>
+            <a href="<?php echo esc_url(__('https://wordpress.org/', 'mc_theme')); ?>">
+                <?php
                 /* translators: %s: CMS name, i.e. WordPress. */
                 printf(esc_html__('Proudly powered by %s', 'mc_theme'), 'WordPress');
-                ?></a> | <?php
-            /* translators: 1: Theme name, 2: Theme author. */
-            printf(esc_html__('Theme: %1$s by %2$s.', 'mc_theme'), 'mc_theme', '<a href="https://facebook.com/adam.dobrawy">Karol Breguła & Kamil Breguła</a>');
-            ?></p>
+                ?>
+            </a>
+            |
+            <a href="<?php echo esc_url(__('https://github.com/ad-m/mc-theme', 'mc_theme')); ?>">
+                <?php printf(esc_html__('The source code of the theme is freely available.', 'mc_theme')); ?>
+            </a>
+        </p>
     </footer>
 </div>
 <?php wp_footer(); ?>

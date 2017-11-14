@@ -17,6 +17,7 @@
   }
 }
 
+
 $xs-media: "min-width: 576px";
 $sm-media: "min-width: 768px";
 $md-media: "min-width: 992px";
@@ -26,9 +27,7 @@ $sm-media-max: "max-width: 768px";
 $md-media-max: "max-width: 992px";
 $lg-media-max: "max-width: 1200px";
 
-@media (#{$xs-media}) {
-  @include make-columns('col-xs-', 12);
-}
+@include make-columns('col-xs-', 12);
 
 @media (#{$sm-media}) {
   @include make-columns('col-sm-', 12);

@@ -17,6 +17,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
     <?php wp_head(); ?>
@@ -28,39 +29,34 @@
 
 <div class="container">
     <div class="top-bar">
-        <a href="http://gov.pl/" class="top-bar__gov-pl">gov.pl</a>
-        <p class="top-bar__welcome"><?php
-            printf(
-                wp_kses(
-                /* translators: 1: link to main website of ministry. */
-                    __('Go to <a href="%s">the main website of the Ministry of Digital Affairs</a>.', 'mc_theme'),
-                    array(
-                        'a' => array(
-                            'href' => array(),
-                        ),
-                    )
-                ),
-                "https://mc.gov.pl/cyfryzacja"
-            );
-            ?></p>
+        <div class="row">
+            <div class="col-xs-2">
+                <a href="http://gov.pl/" class="top-bar__gov-pl">gov.pl</a>
+            </div>
+            <div class="col-xs-10">
+                <a href="https://mc.gov.pl/cyfryzacja" class="top-bar__welcome">
+                    <?php _e('Go to the main website of the Ministry</a>', 'mc_theme'); ?>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="container">
-    <div class="logo-bar ">
+    <div class="logo-bar">
         <div class="row">
             <div class="col-xs-2">
                 <div class="logo-bar__logo">
                     <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg'); ?>">
                 </div>
             </div>
-            <div class="col-lg-10">
+            <div class="col-xs-10">
                 <div class="logo-bar__header">
                     <h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
                     <?php
                     $description = get_bloginfo('description', 'display');
                     if ($description || is_customize_preview()) : ?>
-                        <p><?php echo $description; /* WPCS: xss ok. */ ?></p>
+                        <p class="hide-xs-max"><?php echo $description; /* WPCS: xss ok. */ ?></p>
                     <?php endif; ?>
                 </div>
             </div>
@@ -70,16 +66,24 @@
 </div>
 <div class="container">
     <div class="navbar">
-        <div class="navbar__search">
+        <div class="navbar__search hide-md-max">
             <?php get_search_form(); ?>
         </div>
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'menu-1',
-            'menu_id' => 'primary-menu',
-            'menu_class' => 'navbar__menu',
-            'depth' => 1
-        ));
-        ?>
+        <div class="navbar__menu">
+            <div class="hide-sm">
+                <a class="menu-handler">
+                    <img src="<?php mc_theme_echo_media_uri('static/img/bar.svg'); ?>">
+                    Menu
+                </a>
+            </div>
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu-1',
+                'menu_id' => 'primary-menu',
+                'menu_class' => 'navbar__menu-list',
+                'depth' => 1
+            ));
+            ?>
+        </div>
     </div>
 </div>
