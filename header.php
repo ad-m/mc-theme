@@ -47,7 +47,7 @@
         <div class="row">
             <div class="col-xxs-3 col-xs-2">
                 <div class="logo-bar__logo">
-                    <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg'); ?>">
+                    <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg'); ?>" alt="<? _e("Emblem of the RP in the page header", 'mc_theme');?>">
                 </div>
             </div>
             <div class="col-xxs-9 col-xs-10">
