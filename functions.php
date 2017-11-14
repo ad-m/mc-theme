@@ -138,8 +138,8 @@ function mc_theme_widgets_init() {
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
         'before_widget' => '',
         'after_widget'  => '',
-        'before_title'  => '<div class="header"><h2 class="widget-title">',
-        'after_title'   => '</h2><span class="header__strip"></span></div>',
+        'before_title'  => '<div class="header"><h1 class="widget-title">',
+        'after_title'   => '</h1><span class="header__strip"></span></div>',
     ) );
     register_sidebar( array(
         'name'          => esc_html__( 'Bottom-bar right', 'mc_theme' ),
@@ -147,8 +147,8 @@ function mc_theme_widgets_init() {
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
         'before_widget' => '',
         'after_widget'  => '',
-        'before_title'  => '<div class="header"><h2 class="widget-title">',
-        'after_title'   => '</h2><span class="header__md-strip"></span></div>',
+        'before_title'  => '<div class="header"><h1 class="widget-title">',
+        'after_title'   => '</h1><span class="header__md-strip"></span></div>',
     ) );
     register_sidebar( array(
         'name'          => esc_html__( 'Contact section', 'mc_theme' ),
@@ -156,8 +156,8 @@ function mc_theme_widgets_init() {
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
         'before_widget' => '<div class="section row contact-section"><div class="col-sm-6">',
         'after_widget'  => '</div></div>',
-        'before_title'  => '<div class="header"><h2 class="widget-title">',
-        'after_title'   => '</h2><span class="header__strip"></span></div>',
+        'before_title'  => '<div class="header"><h1 class="widget-title">',
+        'after_title'   => '</h1><span class="header__strip"></span></div>',
     ) );
 
 

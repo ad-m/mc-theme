@@ -52,10 +52,8 @@
             <div class="col-lg-3 col-sm-3 col-xs-12">
                 <div class="row">
                     <div class="col-xs-6 col-sm-12">
-                     <div class="article_metrics__wrapper">
-                            <div class="article__metrics">
-                                <?php mc_theme_metric(); ?>
-                            </div>
+                        <div class="article__metrics">
+                            <?php mc_theme_metric(); ?>
                         </div>
                     </div>
                     <?php if (has_post_thumbnail() and !is_singular()): ?>

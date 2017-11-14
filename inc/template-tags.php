@@ -94,9 +94,12 @@ if (!function_exists('mc_theme_metric')) :
 
     function mc_theme_metric()
     {
-        $updated_on = get_updated_on_string();
+        echo '<h2 class="screen-reader-text">' . __('Metadata of post', 'mc_theme'). '</h2>';
 
         echo '<span class="posted-on">' . get_posted_on_string() . '</span>'; // WPCS: XSS OK.
+
+        $updated_on = get_updated_on_string();
+
         if ($updated_on !== '') {
             echo '<span class="updated-on">' . $updated_on . '</span>'; // WPCS: XSS OK.
         }
