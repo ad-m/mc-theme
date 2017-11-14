@@ -30,12 +30,12 @@
 <div class="container">
     <div class="top-bar">
         <div class="row">
-            <div class="col-xs-2">
+            <div class="col-xxs-3 col-xs-2">
                 <a href="http://gov.pl/" class="top-bar__gov-pl">gov.pl</a>
             </div>
-            <div class="col-xs-10">
+            <div class="col-xxs-9 col-xs-10">
                 <a href="https://mc.gov.pl/cyfryzacja" class="top-bar__welcome">
-                    <?php _e('Go to the main website of the Ministry</a>', 'mc_theme'); ?>
+                    <?php _e('Go to the main website of the Ministry', 'mc_theme'); ?>
                 </a>
             </div>
         </div>
@@ -45,12 +45,12 @@
 <div class="container">
     <div class="logo-bar">
         <div class="row">
-            <div class="col-xs-2">
+            <div class="col-xxs-3 col-xs-2">
                 <div class="logo-bar__logo">
                     <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg'); ?>">
                 </div>
             </div>
-            <div class="col-xs-10">
+            <div class="col-xxs-9 col-xs-10">
                 <div class="logo-bar__header">
                     <h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
                     <?php
@@ -70,6 +70,7 @@
             <?php get_search_form(); ?>
         </div>
         <div class="navbar__menu">
+            <h1 class="screen-reader-text"><?php _e('Navigation', 'mc_theme'); ?></h1>
             <div class="hide-sm">
                 <a class="menu-handler">
                     <img src="<?php mc_theme_echo_media_uri('static/img/bar.svg'); ?>">
@@ -85,5 +86,6 @@
             ));
             ?>
         </div>
+
     </div>
 </div>

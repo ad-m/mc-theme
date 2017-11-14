@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mc-theme\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
-"POT-Creation-Date: 2017-11-10 20:37+0100\n"
-"PO-Revision-Date: 2017-11-10 20:37+0100\n"
+"POT-Creation-Date: 2017-11-14 12:03+0100\n"
+"PO-Revision-Date: 2017-11-14 12:04+0100\n"
 "Last-Translator: Adam Dobrawy <naczelnik@jawnosc.tk>\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
@@ -58,11 +58,11 @@ msgstr[2] "%1$s komentarzy do &ldquo;%2$s&rdquo;"
 msgid "Comments are closed."
 msgstr "Komentarze są zamknięte."
 
-#: footer.php:22
+#: footer.php:23
 msgid "About blog"
 msgstr "O blogu"
 
-#: footer.php:25
+#: footer.php:26
 msgid ""
 "This is the place for less formal communication, sharing experiences and "
 "making things available that can be important and interesting to you."
@@ -70,24 +70,24 @@ msgstr ""
 "To jest miejsce do mniej formalnej komunikacji, wymiany doświadczeń oraz "
 "udostępnienia tych rzeczy, które dla Państwa mogą być istotne i ciekawe."
 
-#: footer.php:36
+#: footer.php:37
 msgid "Find us"
 msgstr "Znajdź nas"
 
-#: footer.php:39
+#: footer.php:41
 msgid "Address<br>Królewska 27<br> 00-500 Warsaw"
 msgstr "Adres<br>Królewska 27 <br>00-500 Warszawa"
 
-#: footer.php:40
+#: footer.php:42
 msgid "Openning hours<br>Monday-Friday 8:15-16:15"
 msgstr "Godziny<br>od poniedziałku do piątku 8:15-16:15"
 
-#: footer.php:51
+#: footer.php:55
 msgid ""
 "Go to the Public Information Bulletin of the Ministry of Digital Affairs"
 msgstr "Przejdź do Biuletyn Informacji Publicznej Ministerstwa Cyfryzacji"
 
-#: footer.php:56
+#: footer.php:60
 msgid ""
 "The articles on GOV.PL, which do not provide any additional information on "
 "copyright, are public information and are provided free of charge. Using "
@@ -102,19 +102,22 @@ msgstr ""
 "ramach licencji <a href=\"%s\">Creative Commons Uznanie Autorstwa 3.0 "
 "Polska</a>"
 
-#: footer.php:61
+#: footer.php:67
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
 #. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:63
+#: footer.php:70
 msgid "Proudly powered by %s"
 msgstr "Dumnie napędzany przez %s"
 
-#. translators: 1: Theme name, 2: Theme author.
-#: footer.php:66
-msgid "Theme: %1$s by %2$s."
-msgstr "Motyw: %1$s przez %2$s."
+#: footer.php:74
+msgid "https://github.com/ad-m/mc-theme"
+msgstr "https://github.com/ad-m/mc-theme"
+
+#: footer.php:75
+msgid "The source code of the theme is freely available."
+msgstr "Kod źródłowy motywu jest swobodnie dostępny."
 
 #: functions.php:48
 msgid "Primary"
@@ -145,13 +148,13 @@ msgstr "Dolny prawy obszar"
 msgid "Contact section"
 msgstr "Sekcja kontaktowa"
 
-#. translators: 1: link to main website of ministry.
 #: header.php:38
-msgid ""
-"Go to <a href=\"%s\">the main website of the Ministry of Digital Affairs</a>."
-msgstr ""
-"Przejdź do <a href=\"%s\">głównej strony internetowej Ministerstwa "
-"Cyfryzacji</a>."
+msgid "Go to the main website of the Ministry"
+msgstr "Przejdź do głównej strony internetowej Ministerstwa"
+
+#: header.php:73
+msgid "Navigation"
+msgstr "Nawigacja"
 
 #. translators: %s: post date.
 #. translators: %s: post publish date.
@@ -228,7 +231,7 @@ msgstr ""
 "<div class=\"nav-next\"><span class=\"label\">Następny wpis:</span>%link</"
 "div>"
 
-#: index.php:21
+#: index.php:20
 msgid "Archive of posts"
 msgstr "Archiwum wpisów"
 
@@ -241,7 +244,7 @@ msgstr "Wpisy"
 msgid "There is an <a href=\"%1$s\">archive of posts</a>."
 msgstr "Dostępne jest <a href=\"%1$s\">archiwum wpisów</a>."
 
-#: page-home.php:52
+#: page-home.php:59
 msgid "Sorry, no posts matched your criteria."
 msgstr "Przepraszamy, żadne posty nie spełniają Twoich kryteriów."
 
@@ -279,7 +282,7 @@ msgstr ""
 "Ci w tym pomoże."
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:34
+#: template-parts/content.php:39
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Kontynuuj czytanie <span class=\"screen-reader-text\"> \"%s\"</span>"
 
@@ -302,6 +305,19 @@ msgstr "Karol Breguła & Kamil Breguła"
 #. Author URI of the plugin/theme
 msgid "https://facebook.com/adam.dobrawy"
 msgstr "https://facebook.com/adam.dobrawy"
+
+#~ msgid "Go to the main website of the Ministry</a>"
+#~ msgstr "Go to the main website of the Ministry"
+
+#~ msgid "Theme: %1$s by %2$s."
+#~ msgstr "Motyw: %1$s przez %2$s."
+
+#~ msgid ""
+#~ "Go to <a href=\"%s\">the main website of the Ministry of Digital Affairs</"
+#~ "a>."
+#~ msgstr ""
+#~ "Przejdź do <a href=\"%s\">głównej strony internetowej Ministerstwa "
+#~ "Cyfryzacji</a>."
 
 #~ msgid "Home left"
 #~ msgstr "Strona główna po lewej"

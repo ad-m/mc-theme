@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mc_theme 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
-"POT-Creation-Date: 2017-11-10 19:37:30+00:00\n"
+"POT-Creation-Date: 2017-11-14 11:03:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,34 +48,34 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:22
+#: footer.php:23
 msgid "About blog"
 msgstr ""
 
-#: footer.php:25
+#: footer.php:26
 msgid ""
 "This is the place for less formal communication, sharing experiences and "
 "making things available that can be important and interesting to you."
 msgstr ""
 
-#: footer.php:36
+#: footer.php:37
 msgid "Find us"
 msgstr ""
 
-#: footer.php:39
+#: footer.php:41
 msgid "Address<br>Królewska 27<br> 00-500 Warsaw"
 msgstr ""
 
-#: footer.php:40
+#: footer.php:42
 msgid "Openning hours<br>Monday-Friday 8:15-16:15"
 msgstr ""
 
-#: footer.php:51
+#: footer.php:55
 msgid ""
 "Go to the Public Information Bulletin of the Ministry of Digital Affairs"
 msgstr ""
 
-#: footer.php:56
+#: footer.php:60
 msgid ""
 "The articles on GOV.PL, which do not provide any additional information on "
 "copyright, are public information and are provided free of charge. Using "
@@ -84,18 +84,21 @@ msgid ""
 "Attribution 3.0 Poland</a>"
 msgstr ""
 
-#: footer.php:61
+#: footer.php:67
 msgid "https://wordpress.org/"
 msgstr ""
 
 #. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:63
+#: footer.php:70
 msgid "Proudly powered by %s"
 msgstr ""
 
-#. translators: 1: Theme name, 2: Theme author.
-#: footer.php:66
-msgid "Theme: %1$s by %2$s."
+#: footer.php:74
+msgid "https://github.com/ad-m/mc-theme"
+msgstr ""
+
+#: footer.php:75
+msgid "The source code of the theme is freely available."
 msgstr ""
 
 #: functions.php:48
@@ -128,10 +131,12 @@ msgstr ""
 msgid "Contact section"
 msgstr ""
 
-#. translators: 1: link to main website of ministry.
 #: header.php:38
-msgid ""
-"Go to <a href=\"%s\">the main website of the Ministry of Digital Affairs</a>."
+msgid "Go to the main website of the Ministry"
+msgstr ""
+
+#: header.php:73
+msgid "Navigation"
 msgstr ""
 
 #. translators: %s: post date.
@@ -205,7 +210,7 @@ msgid ""
 "<div class=\"nav-next\"><span class=\"label\">Next post:</span>%link</div>"
 msgstr ""
 
-#: index.php:21
+#: index.php:20
 msgid "Archive of posts"
 msgstr ""
 
@@ -218,7 +223,7 @@ msgstr ""
 msgid "There is an <a href=\"%1$s\">archive of posts</a>."
 msgstr ""
 
-#: page-home.php:52
+#: page-home.php:59
 msgid "Sorry, no posts matched your criteria."
 msgstr ""
 
@@ -250,7 +255,7 @@ msgid ""
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:34
+#: template-parts/content.php:39
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 

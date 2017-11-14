@@ -116,65 +116,115 @@ pre {
 .row {
   margin: 0 -8px; }
 
-.col-xs-1 {
+.col-xxs-1 {
   width: 8.33333%;
   float: left;
   padding: 8px; }
 
-.col-xs-2 {
+.col-xxs-2 {
   width: 16.66667%;
   float: left;
   padding: 8px; }
 
-.col-xs-3 {
+.col-xxs-3 {
   width: 25%;
   float: left;
   padding: 8px; }
 
-.col-xs-4 {
+.col-xxs-4 {
   width: 33.33333%;
   float: left;
   padding: 8px; }
 
-.col-xs-5 {
+.col-xxs-5 {
   width: 41.66667%;
   float: left;
   padding: 8px; }
 
-.col-xs-6 {
+.col-xxs-6 {
   width: 50%;
   float: left;
   padding: 8px; }
 
-.col-xs-7 {
+.col-xxs-7 {
   width: 58.33333%;
   float: left;
   padding: 8px; }
 
-.col-xs-8 {
+.col-xxs-8 {
   width: 66.66667%;
   float: left;
   padding: 8px; }
 
-.col-xs-9 {
+.col-xxs-9 {
   width: 75%;
   float: left;
   padding: 8px; }
 
-.col-xs-10 {
+.col-xxs-10 {
   width: 83.33333%;
   float: left;
   padding: 8px; }
 
-.col-xs-11 {
+.col-xxs-11 {
   width: 91.66667%;
   float: left;
   padding: 8px; }
 
-.col-xs-12 {
+.col-xxs-12 {
   width: 100%;
   float: left;
   padding: 8px; }
+
+@media (min-width: 576px) {
+  .col-xs-1 {
+    width: 8.33333%;
+    float: left;
+    padding: 8px; }
+  .col-xs-2 {
+    width: 16.66667%;
+    float: left;
+    padding: 8px; }
+  .col-xs-3 {
+    width: 25%;
+    float: left;
+    padding: 8px; }
+  .col-xs-4 {
+    width: 33.33333%;
+    float: left;
+    padding: 8px; }
+  .col-xs-5 {
+    width: 41.66667%;
+    float: left;
+    padding: 8px; }
+  .col-xs-6 {
+    width: 50%;
+    float: left;
+    padding: 8px; }
+  .col-xs-7 {
+    width: 58.33333%;
+    float: left;
+    padding: 8px; }
+  .col-xs-8 {
+    width: 66.66667%;
+    float: left;
+    padding: 8px; }
+  .col-xs-9 {
+    width: 75%;
+    float: left;
+    padding: 8px; }
+  .col-xs-10 {
+    width: 83.33333%;
+    float: left;
+    padding: 8px; }
+  .col-xs-11 {
+    width: 91.66667%;
+    float: left;
+    padding: 8px; }
+  .col-xs-12 {
+    width: 100%;
+    float: left;
+    padding: 8px; } }
 
 @media (min-width: 768px) {
   .col-sm-1 {
@@ -383,8 +433,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #000; }
 
 .section {
-  padding-left: 16.66667%;
+  padding-left: 25%;
   padding-bottom: 96px; }
+  @media (min-width: 576px) {
+    .section {
+      padding-left: 16.66667%; } }
 
 .header {
   padding: 8px 0;
@@ -395,7 +448,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 16px; }
 
 @media (max-width: 576px) {
-  .header__xs-strip:after {
+  .header__md-strip:after {
     content: '';
     height: 0;
     width: 96px;
@@ -575,8 +628,10 @@ a.element {
       .navbar__menu a:hover, .navbar__menu a:focus {
         border-bottom: 8px solid #0075e2; }
   .menu-handler {
+    position: relative;
     padding: 16px;
-    display: block; }
+    display: block;
+    border-bottom: 1px solid silver; }
     .menu-handler img {
       width: 21px;
       vertical-align: middle; }
@@ -728,11 +783,6 @@ a.article {
 
 .article__navigation {
   padding: 16px 0; }
-
-@media (min-width: 1200px) {
-  .article__metrics {
-    position: absolute;
-    bottom: 0; } }
 
 .article__metrics span {
   display: block; }
