@@ -60,26 +60,6 @@ if ( ! function_exists( 'mc_theme_setup' ) ) :
 			'caption',
 		) );
 
-		// Set up the WordPress core custom background feature.
-//		add_theme_support( 'custom-background', apply_filters( 'mc_theme_custom_background_args', array(
-//			'default-color' => 'ffffff',
-//			'default-image' => '',
-//		) ) );
-
-//		// Add theme support for selective refresh for widgets.
-//		add_theme_support( 'customize-selective-refresh-widgets' );
-//
-//		/**
-//		 * Add support for core custom logo.
-//		 *
-//		 * @link https://codex.wordpress.org/Theme_Logo
-//		 */
-//		add_theme_support( 'custom-logo', array(
-//			'height'      => 250,
-//			'width'       => 250,
-//			'flex-width'  => true,
-//			'flex-height' => true,
-//		) );
         add_theme_support( 'starter-content', array(
             'posts' => array(
                 'home' => array(
@@ -197,17 +177,6 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
 /**
  * Registers an editor stylesheet for the theme.
  */
