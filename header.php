@@ -63,8 +63,8 @@
         </div>
     </div>
 </header>
-<nav class="container">
-    <div class="navbar">
+<header class="container">
+    <nav class="navbar">
         <div class="navbar__search hide-md-max">
             <?php get_search_form(); ?>
         </div>
@@ -87,5 +87,5 @@
             ?>
         </div>
 
-    </div>
-</nav>
+    </nav>
+</header>

@@ -4,31 +4,32 @@
     }
 }
 
-@media (#{$xs-media}) {
+@media #{$xs-media} {
     @include make-hide-size('hide-xs');
 }
 
-@media (#{$sm-media}) {
+@media #{$sm-media} {
     @include make-hide-size('hide-sm');
 }
 
-@media (#{$md-media}) {
+@media #{$md-media} {
     @include make-hide-size('hide-md');
 }
 
-@media (#{$lg-media}) {
+@media #{$lg-media} {
     @include make-hide-size('hide-lg');
 }
 
-@media (#{$xs-media-max}) {
+@media #{$xs-media-max} {
     @include make-hide-size('hide-xs-max');
 }
-@media (#{$sm-media-max}) {
+
+@media #{$sm-media-max} {
     @include make-hide-size('hide-sm-max');
 }
-@media (#{$md-media-max}) {
+@media #{$md-media-max} {
     @include make-hide-size('hide-md-max');
 }
-@media (#{$lg-media-max}) {
+@media #{$lg-media-max} {
     @include make-hide-size('hide-lg-max');
 }
