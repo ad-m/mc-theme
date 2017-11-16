@@ -77,9 +77,9 @@
             </div>
             <?php
             wp_nav_menu(array(
+                'menu_class'=>'navbar__menu-list',
                 'theme_location' => 'menu-1',
-                'container' =>  'nav',
-                'container_class' => 'navbar__menu-list',
+                'container' =>  'ul',
                 'depth' => 1
             ));
             ?>
