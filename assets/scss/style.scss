@@ -176,7 +176,7 @@ a.element {
     padding-top: 0;
     font-weight: normal;
     font-size: 1.25rem;
-    @media(#{$lg-media}){
+    @media(#{$lg-media}) {
       font-size: 3rem;
     }
   }
@@ -250,7 +250,6 @@ a.element {
     border-bottom: 1px solid lighten(#737373, 30%);
   }
 
-
   @keyframes fadeOutMenu {
     from {
       opacity: 0;
@@ -307,8 +306,6 @@ a.element {
     background: #ffffff;
   }
 }
-
-;
 
 .navbar__search {
   float: right;
