@@ -667,7 +667,7 @@ a.element {
     to {
       opacity: 0;
       visibility: hidden; } }
-  .navbar__menu-list {
+  ul {
     position: absolute;
     top: 100%;
     width: 100%;
@@ -687,12 +687,12 @@ a.element {
             animation-timing-function: ease;
     background-color: #ffffff;
     z-index: 1; }
-    .navbar__menu-list[aria-expanded="true"] {
+    ul[aria-expanded="true"] {
       -webkit-animation-name: fadeOutMenu;
               animation-name: fadeOutMenu;
       opacity: 0;
       visibility: visible; }
-    .navbar__menu-list[aria-expanded="false"] {
+    ul[aria-expanded="false"] {
       opacity: 1;
       visibility: hidden;
       -webkit-animation-name: fadeInMenu;
