@@ -603,13 +603,13 @@ a.element {
     margin: 8px 8px; }
 
 @media (min-width: 768px) {
-  .navbar__menu-list {
+  .navbar__menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     padding-left: 8.33333%; }
-    .navbar__menu-list li {
-      display: inline-block; }
+  .navbar__menu li {
+    display: inline-block; }
   .navbar__menu a {
     display: inline-block;
     text-decoration: none;

@@ -195,33 +195,35 @@ a.element {
 }
 
 @media (#{$sm-media}) {
-  .navbar__menu-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-left: percentage(1/12);
+  .navbar__menu {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-left: percentage(1/12);
+    }
     li {
       display: inline-block;
     }
-  }
-  .navbar__menu a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 16px;
-    //padding-right: 8px;
-    font-size: 1.25em;
-    //&:first-child {
-    //  padding-left: 0;
-    //}
-    &:focus, &:hover {
-      border-bottom: 2px solid #0075e2;
-    }
-    &:focus {
-      background-color: #0075e2;
-      color: #fff;
-    }
-    &.active {
-      border-bottom: 2px solid red;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 16px;
+      //padding-right: 8px;
+      font-size: 1.25em;
+      //&:first-child {
+      //  padding-left: 0;
+      //}
+      &:focus, &:hover {
+        border-bottom: 2px solid #0075e2;
+      }
+      &:focus {
+        background-color: #0075e2;
+        color: #fff;
+      }
+      &.active {
+        border-bottom: 2px solid red;
+      }
     }
   }
 }
