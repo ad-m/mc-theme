@@ -22,13 +22,16 @@
   .#{$selector}:after {
     content: '';
     height: 0;
-    width: 96px;
     display: block;
     border-top: 2px solid red;
-    margin-left: -112px;
+    width: 500px;
+    margin-left: -515px;
+    @media #{$lg-media} {
+       width: 85px;
+       margin-left: -100px;
+    }
     position: relative;
     top: -8px;
-    z-index: -1;
   }
 }
 
@@ -58,6 +61,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: percentage(3/12);
     @media #{$xs-media} {
       padding-left: percentage(2/12);
+      @media #{$lg-media} {
+        padding-left: percentage(1/12);
+      }
     }
   }
   padding-bottom: 96px;
@@ -391,10 +397,10 @@ a.element {
   background-color: rgb(226, 226, 226);
   color: #000;
   .header__strip:after {
-    border-top-color: #000;
+    border-top-color: #1a1a1a;
   }
-;
-  @media #{$sm-media} {
+
+  @media #{$md-media} {
     background-image: url("../img/contact-section.png");
     background-position: right top;
   }
