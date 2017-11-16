@@ -8,7 +8,7 @@
  */
 
 ?>
-    <article id="post-<?php the_ID(); ?>" class="article">
+    <div id="post-<?php the_ID(); ?>" class="article">
         <?php if (is_singular() && has_post_thumbnail()) : ?>
             <div class="row">
                 <div class="col-xs-12">
@@ -18,7 +18,7 @@
             </div>
         <?php endif; ?>
         <div class="row">
-            <div class="col-lg-9 col-sm-9 col-xs-12">
+            <article class="col-lg-9 col-sm-9 col-xs-12">
                 <header class="article__header">
                     <?php
                     if (is_singular()) :
@@ -48,8 +48,8 @@
 
                     ?>
                 </div><!-- .article__content -->
-            </div>
-            <div class="col-lg-3 col-sm-3 col-xs-12">
+            </article>
+            <aside class="col-lg-3 col-sm-3 col-xs-12">
                 <div class="row">
                     <div class="col-xs-6 col-sm-12">
                         <div class="article__metrics">
@@ -66,7 +66,7 @@
                         </div>
                     <?php endif; ?>
                 </div>
-            </div>
+            </aside>
         </div>
         <div class="row">
             <div class="col-lg-9 col-xs-12">
@@ -80,7 +80,7 @@
 
             </div>
         </div>
-    </article><!-- #post-<?php the_ID(); ?> -->
+    </div><!-- #post-<?php the_ID(); ?> -->
 <?php if (comments_open() || get_comments_number()) : ?>
     <div class="row">
         <div class="col-lg-9 col-xs-12">

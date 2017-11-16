@@ -14,7 +14,9 @@
 
 get_header(); ?>
 
-    <div class="section container">
+<main class="container">
+
+    <div class="section">
 
 			<?php
 			while ( have_posts() ) : the_post();
@@ -30,6 +32,7 @@ get_header(); ?>
 			?>
 
     </div>
+</main>
 
 <?php
 get_footer();

@@ -9,7 +9,7 @@
 get_header();
 
 ?>
-    <div class="container">
+    <main class="container">
         <div class="section">
             <div class="header">
                 <h1 class="header__title"><?php _e("Posts", 'mc_theme'); ?></h1>
@@ -61,6 +61,6 @@ get_header();
 
             </div>
         </div>
-    </div>
+    </main>
 <?php
 get_footer();

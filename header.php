@@ -24,8 +24,7 @@
 
 <!--<a class="skip-link screen-reader-text" href="#content">-->
 <?php //esc_html_e( 'Skip to content', 'mc_theme' ); ?><!--</a>-->
-
-<div class="container">
+<header class="container">
     <div class="top-bar">
         <div class="row">
             <div class="col-xxs-3 col-xs-2">
@@ -38,19 +37,21 @@
             </div>
         </div>
     </div>
-</div>
+</header>
 
-<div class="container">
+<header class="container">
     <div class="logo-bar">
         <div class="row">
             <div class="col-xxs-3 col-xs-2">
                 <div class="logo-bar__logo">
-                    <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg'); ?>" alt="<? _e("Emblem of the RP in the page header", 'mc_theme');?>">
+                    <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg'); ?>"
+                         alt="<? _e("Emblem of the RP in the page header", 'mc_theme'); ?>">
                 </div>
             </div>
             <div class="col-xxs-9 col-xs-10">
                 <div class="logo-bar__header">
-                    <h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                    <h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+                    </h1>
                     <?php
                     $description = get_bloginfo('description', 'display');
                     if ($description || is_customize_preview()) : ?>
@@ -61,8 +62,8 @@
 
         </div>
     </div>
-</div>
-<div class="container">
+</header>
+<nav class="container">
     <div class="navbar">
         <div class="navbar__search hide-md-max">
             <?php get_search_form(); ?>
@@ -77,13 +78,14 @@
             </div>
             <?php
             wp_nav_menu(array(
-                'menu_class'=>'navbar__menu-list',
+                'menu_class' => 'navbar__menu-list',
                 'theme_location' => 'menu-1',
-                'container' =>  'ul',
-                'depth' => 1
+                'container' => 'ul',
+                'depth' => 1,
+                'fallback_cb' => false,
             ));
             ?>
         </div>
 
     </div>
-</div>
+</nav>

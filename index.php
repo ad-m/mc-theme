@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-    <div class="container">
+    <main class="container">
         <div class="section">
             <div class="header">
                 <h1 class="header__title"><?php _e("Archive of posts", 'mc_theme'); ?></h1>
@@ -45,7 +45,6 @@ get_header(); ?>
             endif; ?>
         </div>
 
-    </div><!-- #primary -->
-
+    </main>
 <?php
 get_footer();
