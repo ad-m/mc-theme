@@ -195,7 +195,7 @@ a.element {
 }
 
 @media (#{$sm-media}) {
-  .navbar__menu {
+  .navbar__menu-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -220,7 +220,6 @@ a.element {
       background-color: #0075e2;
       color: #fff;
     }
-  ;
     &.active {
       border-bottom: 2px solid red;
     }
