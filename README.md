@@ -27,21 +27,36 @@ Budowanie
 
 W katalogu z wtyczką wykonaj:
 ```
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+apt-get install nodejs gettext -y;
+cd /vagrant;
 npm install
-gulp build
+./node_modules/.bin/gulp build
+```
+
+Alternatywnie:
+```
+vagrant up
 ```
 
 Tłumaczenie
 ---
 
-Edycja plików tłumaczeń jest realizowana ze wsparciem [projektu Crowdin.com](https://crowdin.com/project/mc-theme). 
-Zmiany wprowadzone w serwisie są synchronizowane z wydzielonym branchem ``l10n_master``. 
-W celu edycji plików tłumaczeń wprowadź zmiany na Crowdin.com. Następnie wykonaj poniższe, aby włączyć je do projektu:
+Pliki tłumaczeń składają się z plików *.pot zawierających szablon plików tłumaczeń. Możliwe jest ich 
+wygenerowanie z wykorzystaniem:
 ```
 wp-makepot wp-theme /home/adas/Devel/mc-blog/wp-content/themes/mc_theme /home/adas/Devel/mc-blog/wp-content/themes/mc_theme/languages/mc_theme.pot
-for file in `find . -name "*.po"` ; do msgfmt -o ${file/.po/.mo} $file ; done
-git commit -a -m "Update translation" -a;
-git push origin;
+```
+Polecenie wymaga narzędzi []i18n-tools](https://codex.wordpress.org/I18n_for_WordPress_Developers#Using_the_i18n_tools).
+
+Następnie konieczne jest wygenerowanie plików *.po dla danego języka. Zalecam wykorzystanie w tym celu oprogramowania 
+Poedit. Edycja plików tłumaczeń jest realizowana ze wsparciem [projektu Crowdin.com](https://crowdin.com/project/mc-theme). 
+Zmiany wprowadzone w serwisie są synchronizowane z wydzieloną gałęzią ``l10n_master`` i systematycznie włączane. 
+
+Podgląd wprowadzonych zmian jest możliwy po przebudowaniu plików *.mo np. poprzez polecenie:
+
+```
+gulp gettex
 ```
 
 Uwagi na temat finansowania i autorstwa

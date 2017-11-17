@@ -1,23 +1,25 @@
 {
   "name": "mc_theme",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "Adam Dobrawy",
+  "license": "GNU General Public License v2 or later",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-gettext": "^0.3.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.0.0"
+  },
+  "script": {
+    "version": "gulp version"
   },
   "browserslist": [
     "> 1%",

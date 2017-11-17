@@ -8,46 +8,76 @@ var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
+var gettext = require('gulp-gettext');
+var zip = require('gulp-zip');
+var replace = require('gulp-replace');
+var p = require('./package.json');
 
-gulp.task('css', function(){
+config = {
+    'po': 'languages/**/*.po',
+    'css': 'assets/scss/*.scss',
+    'js': 'assets/js/*.js'
+}
+
+gulp.task('css', function () {
     return gulp
-        .src('assets/scss/*.scss')
+        .src(config.css)
         .pipe(sass())
         .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest('static/css'))
         .pipe(browserSync.stream())
-        .pipe(rename({ extname: ".min.css"}))
+        .pipe(rename({extname: ".min.css"}))
         .pipe(postcss([cssnano()]))
         .pipe(gulp.dest('static/css'))
         .pipe(browserSync.stream());
 });
 
-gulp.task('js', function(){
+gulp.task('js', function () {
     return gulp
-        .src('assets/js/*.js')
+        .src(config.js)
         .pipe(gulp.dest('static/js'))
         .pipe(sourcemaps.init())
         .pipe(concat('script.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('static/js'))
         .pipe(browserSync.stream())
-        .pipe(rename({ extname: ".min.js"}))
+        .pipe(rename({extname: ".min.js"}))
         .pipe(uglify())
         .pipe(gulp.dest('static/js'))
         .pipe(browserSync.stream());
 });
 
 
-gulp.task('live-reload', function() {
+gulp.task('live-reload', function () {
     browserSync.init({
         proxy: "localhost:8080"
     });
 });
 
-gulp.task('build', ['js','css']);
+gulp.task('gettext', function () {
+    gulp.src(config.po)
+        .pipe(gettext())
+        .pipe(gulp.dest('languages'))
+})
 
-gulp.task('watch', ['live-reload'], function(){
-    gulp.watch(['assets/scss/**/*.scss', 'assets/js/**/*.js'], ['build']);
+gulp.task('release', ['version'], function () {
+    gulp.src(['./**/*.{mo,po,min.css,min.js,jpg,min.svg,png,php}',
+        'LICENSE',
+        '!node_modules/**'])
+        .pipe(zip(p.name + ".zip"))
+        .pipe(gulp.dest('.'));
+});
+
+gulp.task('version', function () {
+    gulp.src(['style.css'])
+        .pipe(replace(/^Version: (.+?)$/, "Version: " + p.version))
+        .pipe(gulp.dest('.'));
+});
+
+gulp.task('build', ['js', 'css', 'gettext', 'gettext', 'version']);
+
+gulp.task('watch', ['live-reload'], function () {
+    gulp.watch([config.css, config.js, config.po], ['build']);
 });
 
 gulp.task('default', ['build', 'watch']);
