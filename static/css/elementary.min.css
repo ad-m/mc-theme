@@ -1,1 +1,0 @@
-@charset "UTF-8";blockquote{quotes:"“" "”" "‘" "’"}blockquote:before{color:#ddd;content:open-quote;font-size:4em;line-height:0;vertical-align:-.3em;margin-left:-.5em}blockquote p{display:inline;font-style:italic;margin-top:0}blockquote footer{color:#666}img{max-width:100%}pre{overflow-x:scroll}
