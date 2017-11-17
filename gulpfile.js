@@ -63,6 +63,7 @@ gulp.task('gettext', function () {
 gulp.task('release', ['version'], function () {
     gulp.src(['./**/*.{mo,po,min.css,min.js,jpg,min.svg,png,php}',
         'LICENSE',
+        'style.css'
         '!node_modules/**'])
         .pipe(zip(p.name + ".zip"))
         .pipe(gulp.dest('.'));
