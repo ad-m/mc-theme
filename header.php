@@ -68,6 +68,7 @@
         <div class="navbar__search hide-md-max">
             <?php get_search_form(); ?>
         </div>
+        <?php if(has_nav_menu( 'menu-1')): ?>
         <div class="navbar__menu">
             <h1 class="screen-reader-text"><?php _e('Navigation', 'mc_theme'); ?></h1>
             <div class="hide-sm">
@@ -82,10 +83,9 @@
                 'theme_location' => 'menu-1',
                 'container' => 'ul',
                 'depth' => 1,
-                'fallback_cb' => false,
             ));
             ?>
         </div>
-
+        <?php endif; ?>
     </nav>
 </header>

@@ -3,4 +3,4 @@ node_modules
 mc_theme.zip
 *.mo
 static/css
-static/jss
+static/js
