@@ -29,7 +29,6 @@ W katalogu z wtyczką wykonaj:
 ```
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 apt-get install nodejs gettext -y;
-cd /vagrant;
 npm install
 ./node_modules/.bin/gulp build
 ```
@@ -37,6 +36,12 @@ npm install
 Alternatywnie:
 ```
 vagrant up
+```
+
+Możliwe jest automatyczne budowanie wraz z wprowadzonymi zmianami poprzez wykonanie:
+
+```
+gulp
 ```
 
 Tłumaczenie
@@ -47,17 +52,27 @@ wygenerowanie z wykorzystaniem:
 ```
 wp-makepot wp-theme /home/adas/Devel/mc-blog/wp-content/themes/mc_theme /home/adas/Devel/mc-blog/wp-content/themes/mc_theme/languages/mc_theme.pot
 ```
-Polecenie wymaga narzędzi []i18n-tools](https://codex.wordpress.org/I18n_for_WordPress_Developers#Using_the_i18n_tools).
+Polecenie wymaga narzędzi z pakietu [i18n-tools](https://codex.wordpress.org/I18n_for_WordPress_Developers#Using_the_i18n_tools).
 
 Następnie konieczne jest wygenerowanie plików *.po dla danego języka. Zalecam wykorzystanie w tym celu oprogramowania 
-Poedit. Edycja plików tłumaczeń jest realizowana ze wsparciem [projektu Crowdin.com](https://crowdin.com/project/mc-theme). 
+Poedit. Edycja plików tłumaczeń jest możliwa także ze wsparciem [projektu Crowdin.com](https://crowdin.com/project/mc-theme). 
 Zmiany wprowadzone w serwisie są synchronizowane z wydzieloną gałęzią ``l10n_master`` i systematycznie włączane. 
 
-Podgląd wprowadzonych zmian jest możliwy po przebudowaniu plików *.mo np. poprzez polecenie:
+Podgląd wprowadzonych zmian jest możliwy po przebudowaniu plików *.mo poprzez polecenie:
 
 ```
 gulp gettex
 ```
+
+Nowe wydanie
+---
+
+Projekt został skonfigurowany do automatycznego wydania nowych wersji za pośrednictwem TravisCI. Wydanie nowej wersji
+odbywa się wraz z odpowiednią zmianą jej numeru:
+
+* ``npm version major`` - dla wydań major
+* ``npm version minor`` - dla wydań minor
+* ``npm version patch`` - dla wydań patch
 
 Uwagi na temat finansowania i autorstwa
 ---
