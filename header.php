@@ -72,7 +72,7 @@
             <h1 class="screen-reader-text"><?php _e('Navigation', 'mc_theme'); ?></h1>
             <div class="hide-sm">
                 <a class="menu-handler">
-                    <img src="<?php mc_theme_echo_media_uri('static/img/bar.svg'); ?>">
+                    <img src="<?php mc_theme_echo_media_uri('static/img/bar.min.svg'); ?>" alt="">
                     Menu
                 </a>
             </div>
