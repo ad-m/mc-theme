@@ -17,6 +17,8 @@ wp core install --url="http://localhost:8080/" --title="Blog Ministerstwa Cyfryz
 wp theme install https://github.com/ad-m/mc-theme/archive/master.zip
 ```
 
+W przyszłości aktualizacja może być realizowaną z pomocą wtyczki [GitHub Updater](https://github.com/afragen/github-updater).
+
 Konfiguracja
 ---
 
