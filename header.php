@@ -31,8 +31,8 @@
                 <a href="http://gov.pl/" class="top-bar__gov-pl">gov.pl</a>
             </div>
             <div class="col-xxs-9 col-xs-10 col-lg-11">
-                <a href="https://mc.gov.pl/cyfryzacja" class="top-bar__welcome">
-                    <?php _e('Go to the main website of the Ministry', 'mc_theme'); ?>
+                <a href="<?php echo esc_url(get_theme_mod('office_url', 'https://www.gov.pl/cyfryzacja')); ?>" class="top-bar__welcome">
+                    <?php esc_html_e(sprintf(__('Go to the main website of the %s', 'mc_theme'), get_theme_mod('office_short_name_genitive', 'Ministerstwa'))); ?>
                 </a>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <div class="col-xxs-3 col-xs-2 col-lg-1">
                 <div class="logo-bar__logo">
                     <img src="<?php mc_theme_echo_media_uri('static/img/logo.jpg'); ?>"
-                         alt="<? _e("Emblem of the RP in the page header", 'mc_theme'); ?>">
+                         alt="<?php _e("Emblem of the RP in the page header", 'mc_theme'); ?>">
                 </div>
             </div>
             <div class="col-xxs-9 col-xs-10 col-lg-11">
@@ -89,3 +89,4 @@
         <?php endif; ?>
     </nav>
 </header>
+

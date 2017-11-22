@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mc-theme\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
-"POT-Creation-Date: 2017-11-14 12:22+0100\n"
-"PO-Revision-Date: 2017-11-14 12:23+0100\n"
+"POT-Creation-Date: 2017-11-22 14:36+0100\n"
+"PO-Revision-Date: 2017-11-22 14:38+0100\n"
 "Last-Translator: Adam Dobrawy <naczelnik@jawnosc.tk>\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
@@ -82,16 +82,15 @@ msgstr "Adres<br>Królewska 27 <br>00-500 Warszawa"
 msgid "Openning hours<br>Monday-Friday 8:15-16:15"
 msgstr "Godziny<br>od poniedziałku do piątku 8:15-16:15"
 
-#: footer.php:53
+#: footer.php:57
 msgid "Logo of Public Information Bulletin"
 msgstr "Logo Biuletynu Informacji Publicznej"
 
-#: footer.php:55
-msgid ""
-"Go to the Public Information Bulletin of the Ministry of Digital Affairs"
-msgstr "Przejdź do Biuletyn Informacji Publicznej Ministerstwa Cyfryzacji"
+#: footer.php:59
+msgid "Go to the Public Information Bulletin of %s"
+msgstr "Przejdź do Biuletyn Informacji Publicznej %s"
 
-#: footer.php:60
+#: footer.php:64
 msgid ""
 "The articles on GOV.PL, which do not provide any additional information on "
 "copyright, are public information and are provided free of charge. Using "
@@ -106,20 +105,20 @@ msgstr ""
 "ramach licencji <a href=\"%s\">Creative Commons Uznanie Autorstwa 3.0 "
 "Polska</a>"
 
-#: footer.php:67
+#: footer.php:71
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
 #. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:70
+#: footer.php:74
 msgid "Proudly powered by %s"
 msgstr "Dumnie napędzany przez %s"
 
-#: footer.php:74
+#: footer.php:78
 msgid "https://github.com/ad-m/mc-theme"
 msgstr "https://github.com/ad-m/mc-theme"
 
-#: footer.php:75
+#: footer.php:79
 msgid "The source code of the theme is freely available."
 msgstr "Kod źródłowy motywu jest swobodnie dostępny."
 
@@ -128,37 +127,86 @@ msgid "Primary"
 msgstr "Podstawowy"
 
 #. Template Name of the plugin/theme
-#: functions.php:86
+#: functions.php:66
 msgid "Home page"
 msgstr "Strona główna"
 
-#: functions.php:90
+#: functions.php:70
 msgid "Page for posts"
 msgstr "Strona dla postów"
 
-#: functions.php:136
+#: functions.php:116
 msgid "Bottom-bar left"
 msgstr "Lewy dolny obszar"
 
-#: functions.php:138 functions.php:147 functions.php:156
+#: functions.php:118 functions.php:127 functions.php:136
 msgid "Add widgets here."
 msgstr "Dodaj widżet tutaj."
 
-#: functions.php:145
+#: functions.php:125
 msgid "Bottom-bar right"
 msgstr "Dolny prawy obszar"
 
-#: functions.php:154
+#: functions.php:134
 msgid "Contact section"
 msgstr "Sekcja kontaktowa"
 
-#: header.php:38
-msgid "Go to the main website of the Ministry"
-msgstr "Przejdź do głównej strony internetowej Ministerstwa"
+#: header.php:35
+msgid "Go to the main website of the %s"
+msgstr "Przejdź do głównej strony internetowej %s"
+
+#: header.php:48
+msgid "Emblem of the RP in the page header"
+msgstr "Herb Rzeczypospolitej Polskiej w nagłówku strony"
 
 #: header.php:73
 msgid "Navigation"
 msgstr "Nawigacja"
+
+#: inc/customizer.php:6
+msgid "Office details"
+msgstr "Szczegóły urzędu"
+
+#: inc/customizer.php:12 inc/customizer.php:24
+msgid "A legal, but unique office name"
+msgstr "Legalna, ale unikalna nazwa urzędu"
+
+#: inc/customizer.php:18 inc/customizer.php:30
+msgid "A legal long name eg. with city name"
+msgstr "Długa unikalna nazwa urzędu"
+
+#: inc/customizer.php:19
+msgid "Full name"
+msgstr "Pełna nazwa"
+
+#: inc/customizer.php:31
+msgid "Short name"
+msgstr "Krótka nazwa"
+
+#: inc/customizer.php:42
+msgid "A legal office genre in genitive form"
+msgstr "Prawna kategoria urzędu w dopełniaczu"
+
+#: inc/customizer.php:43
+msgid "Genitive name"
+msgstr "Kategoria w dopełniaczu"
+
+#: inc/customizer.php:54 inc/customizer.php:65
+msgid "URL of main website of office"
+msgstr "Adres URL głównej strony internetowej urzędu"
+
+#: inc/customizer.php:55 inc/customizer.php:66
+msgid "Main site URL"
+msgstr "Adres URL głównej strony"
+
+#: inc/customizer.php:77
+msgid "Upload a contact section background"
+msgstr "Prześlij tło sekcji kontaktowej"
+
+#: inc/customizer.php:78
+msgid ""
+"The image should have 366x311 dimensions and the background color is #e3e3e3."
+msgstr "Obraz powinien mieć wymiary 366x311, a kolor tła to #e3e3e3."
 
 #. translators: %s: post date.
 #. translators: %s: post publish date.
@@ -313,6 +361,13 @@ msgstr "Karol Breguła & Kamil Breguła"
 #. Author URI of the plugin/theme
 msgid "https://facebook.com/adam.dobrawy"
 msgstr "https://facebook.com/adam.dobrawy"
+
+#~ msgid ""
+#~ "Go to the Public Information Bulletin of the Ministry of Digital Affairs"
+#~ msgstr "Przejdź do Biuletyn Informacji Publicznej Ministerstwa Cyfryzacji"
+
+#~ msgid "Go to the main website of the Ministry"
+#~ msgstr "Przejdź do głównej strony internetowej Ministerstwa"
 
 #~ msgid "Go to the main website of the Ministry</a>"
 #~ msgstr "Go to the main website of the Ministry"

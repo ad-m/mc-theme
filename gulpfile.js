@@ -12,6 +12,7 @@ var gettext = require('gulp-gettext');
 var zip = require('gulp-zip');
 var replace = require('gulp-replace');
 var p = require('./package.json');
+var plumber = require('gulp-plumber');
 
 config = {
     'po': 'languages/**/*.po',
@@ -22,7 +23,8 @@ config = {
 gulp.task('css', function () {
     return gulp
         .src(config.css)
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(plumber())
         .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest('static/css'))
         .pipe(browserSync.stream())
