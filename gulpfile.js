@@ -62,7 +62,7 @@ gulp.task('gettext', function () {
         .pipe(gulp.dest('languages'))
 })
 
-gulp.task('release', ['version'], function () {
+gulp.task('release', ['build'], function () {
     gulp.src(['./**/*.{mo,po,min.css,min.js,jpg,min.svg,png,php}',
         'LICENSE',
         'style.css',
