@@ -134,8 +134,8 @@ function mc_theme_widgets_init() {
         'name'          => esc_html__( 'Contact section', 'mc_theme' ),
         'id'            => 'contact-section',
         'description'   => esc_html__( 'Add widgets here.', 'mc_theme' ),
-        'before_widget' => '<div class="section contact-section"><div class="row"><div class="col-sm-6">',
-        'after_widget'  => '</div></div></div>',
+        'before_widget' => '<div class="row"><div class="col-sm-6">',
+        'after_widget'  => '</div></div>',
         'before_title'  => '<div class="header"><h1 class="widget-title">',
         'after_title'   => '</h1><span class="header__strip"></span></div>',
     ) );
