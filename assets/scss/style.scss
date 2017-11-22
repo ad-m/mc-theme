@@ -408,47 +408,49 @@ a.element {
 }
 
 // single article - single post on single /  archive pages
-a.article {
-  text-decoration: none;
-  &:hover,&:focus {
-    text-decoration: underline;
+.article__body {
+  @media #{$md-media} {
+    display: flex;
   }
+  width: 100%;
 }
-
-.article__excerpt {
-  font-weight: bolder;
-}
-
-.article {
-  min-height: 304px;
-  position: relative;
+.article__content {
+  @media #{$md-media} {
+    width: percentage(9/12);
+  }
 }
 
 .article__cover {
   width: 100%;
 }
 
+.article__aside {
+  @media #{$md-media} {
+    width: percentage(3/12);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
 .article__meta {
-  padding: 8px;
-}
-
-.article__title {
-  margin: 0;
-}
-
-.article__content {
-  padding: 0;
-}
-
-.article__navigation {
-  padding: 16px 0;
-}
-
-.article__metrics {
+  align-items: flex-end;
+  padding: 32px 0;
   span {
     display: block;
   }
+
 }
+//.article__navigation {
+//  padding: 32px 0;
+//  @media #{$md-media} {
+//    padding: 16px 0;
+//  }
+//}
 
 .wp-caption {
   color: #777;
