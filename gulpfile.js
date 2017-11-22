@@ -66,6 +66,7 @@ gulp.task('release', ['build'], function () {
     gulp.src(['./**/*.{mo,po,min.css,min.js,jpg,min.svg,png,php}',
         'LICENSE',
         'style.css',
+        'screenshot.png',
         '!node_modules/**'])
         .pipe(zip(p.name + ".zip"))
         .pipe(gulp.dest('.'));
