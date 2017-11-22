@@ -795,7 +795,8 @@ a.element {
   @media only screen and (min-width: 992px) {
     .contact-section {
       background-image: url("../img/contact-section.png");
-      background-position: right top; } }
+      background-position: right top;
+      background-repeat: no-repeat; } }
 
 a.article {
   text-decoration: none; }

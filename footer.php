@@ -44,9 +44,11 @@
             </div>
         </div>
     </div>
-
-    <?php dynamic_sidebar('contact-section'); ?>
-
+    <?php if (is_active_sidebar('contact-section')) : ?>
+        <div class="section contact-section">
+            <?php dynamic_sidebar('contact-section'); ?>
+        </div>
+    <?php endif; ?>
     <div class="section site-footer">
         <div class="row">
             <div class="col-lg-6">

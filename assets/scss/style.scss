@@ -403,6 +403,7 @@ a.element {
   @media #{$md-media} {
     background-image: url("../img/contact-section.png");
     background-position: right top;
+    background-repeat: no-repeat;
   }
 }
 
