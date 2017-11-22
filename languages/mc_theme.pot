@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: mc_theme 1.0.0\n"
+"Project-Id-Version: mc_theme 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/mc_theme\n"
-"POT-Creation-Date: 2017-11-14 11:22:45+00:00\n"
+"POT-Creation-Date: 2017-11-22 13:35:27+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,16 +70,15 @@ msgstr ""
 msgid "Openning hours<br>Monday-Friday 8:15-16:15"
 msgstr ""
 
-#: footer.php:53
+#: footer.php:57
 msgid "Logo of Public Information Bulletin"
 msgstr ""
 
-#: footer.php:55
-msgid ""
-"Go to the Public Information Bulletin of the Ministry of Digital Affairs"
+#: footer.php:59
+msgid "Go to the Public Information Bulletin of %s"
 msgstr ""
 
-#: footer.php:60
+#: footer.php:64
 msgid ""
 "The articles on GOV.PL, which do not provide any additional information on "
 "copyright, are public information and are provided free of charge. Using "
@@ -88,20 +87,20 @@ msgid ""
 "Attribution 3.0 Poland</a>"
 msgstr ""
 
-#: footer.php:67
+#: footer.php:71
 msgid "https://wordpress.org/"
 msgstr ""
 
 #. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:70
+#: footer.php:74
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: footer.php:74
+#: footer.php:78
 msgid "https://github.com/ad-m/mc-theme"
 msgstr ""
 
-#: footer.php:75
+#: footer.php:79
 msgid "The source code of the theme is freely available."
 msgstr ""
 
@@ -109,38 +108,87 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#. #-#-#-#-#  mc_theme.pot (mc_theme 1.0.0)  #-#-#-#-#
+#. #-#-#-#-#  mc_theme.pot (mc_theme 1.0.1)  #-#-#-#-#
 #. Template Name of the plugin/theme
-#: functions.php:86
+#: functions.php:66
 msgid "Home page"
 msgstr ""
 
-#: functions.php:90
+#: functions.php:70
 msgid "Page for posts"
 msgstr ""
 
-#: functions.php:136
+#: functions.php:116
 msgid "Bottom-bar left"
 msgstr ""
 
-#: functions.php:138 functions.php:147 functions.php:156
+#: functions.php:118 functions.php:127 functions.php:136
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:145
+#: functions.php:125
 msgid "Bottom-bar right"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:134
 msgid "Contact section"
 msgstr ""
 
-#: header.php:38
-msgid "Go to the main website of the Ministry"
+#: header.php:35
+msgid "Go to the main website of the %s"
+msgstr ""
+
+#: header.php:48
+msgid "Emblem of the RP in the page header"
 msgstr ""
 
 #: header.php:73
 msgid "Navigation"
+msgstr ""
+
+#: inc/customizer.php:6
+msgid "Office details"
+msgstr ""
+
+#: inc/customizer.php:12 inc/customizer.php:24
+msgid "A legal, but unique office name"
+msgstr ""
+
+#: inc/customizer.php:18 inc/customizer.php:30
+msgid "A legal long name eg. with city name"
+msgstr ""
+
+#: inc/customizer.php:19
+msgid "Full name"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Short name"
+msgstr ""
+
+#: inc/customizer.php:42
+msgid "A legal office genre in genitive form"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Genitive name"
+msgstr ""
+
+#: inc/customizer.php:54 inc/customizer.php:65
+msgid "URL of main website of office"
+msgstr ""
+
+#: inc/customizer.php:55 inc/customizer.php:66
+msgid "Main site URL"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Upload a contact section background"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid ""
+"The image should have 366x311 dimensions and the background color is #e3e3e3."
 msgstr ""
 
 #. translators: %s: post date.
