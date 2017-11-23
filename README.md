@@ -10,11 +10,13 @@ Szablon strony zapewniający wygląd strony internetowej bloga Ministerstwa Cyfr
 Instalacja
 ---
 
+Pobierz [ostatnie wydanie](https://github.com/ad-m/mc-theme/releases) skórki. Następnie wykonaj:
+
 ```
 wp core install 
 wp config create --dbname=mc_blog_test --dbuser=root --dbpass=root
 wp core install --url="http://localhost:8080/" --title="Blog Ministerstwa Cyfryzacji" --admin_user="user" --admin_email=user@example.com --admin_password="pass"
-wp theme install https://github.com/ad-m/mc-theme/archive/master.zip
+wp theme install mc_theme.zip
 ```
 
 W przyszłości aktualizacja może być realizowaną z pomocą wtyczki [GitHub Updater](https://github.com/afragen/github-updater).
@@ -58,7 +60,7 @@ Polecenie wymaga narzędzi z pakietu [i18n-tools](https://codex.wordpress.org/I1
 
 Następnie konieczne jest wygenerowanie plików *.po dla danego języka. Zalecam wykorzystanie w tym celu oprogramowania 
 Poedit. Edycja plików tłumaczeń jest możliwa także ze wsparciem [projektu Crowdin.com](https://crowdin.com/project/mc-theme). 
-Zmiany wprowadzone w serwisie są synchronizowane z wydzieloną gałęzią ``l10n_master`` i systematycznie włączane. 
+Zmiany wprowadzone w serwisie są synchronizowane z wydzieloną gałęzią ``l10n_master`` i systematycznie włączane.
 
 Podgląd wprowadzonych zmian jest możliwy po przebudowaniu plików *.mo poprzez polecenie:
 
@@ -85,3 +87,5 @@ w ramach Programu Operacyjnego Wiedza Edukacja Rozwój,
 oś Priorytetowa III Szkolnictwo wyższe dla gospodarki i rozwoju,
 działanie 3.1 Kompetencje w szkolnictwie wyższym,
 nr projektu: POWR.03.01.00-00-S227/15
+
+Stworzone w oparciu o Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
